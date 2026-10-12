@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 59763e8c1eedd734181f81a1e36354c6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Materials/PolySolidGlow.mat
+  uploadId: 970776

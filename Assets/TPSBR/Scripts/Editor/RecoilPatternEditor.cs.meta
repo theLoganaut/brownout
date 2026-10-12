@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3ea6f27af2c24914cb6f582025e1ae25
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Scripts/Editor/RecoilPatternEditor.cs
+  uploadId: 970776

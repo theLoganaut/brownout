@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e2d529f38bd65d94cbcdc3f259d50db9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Animations/Agents/GrenadeArm.anim
+  uploadId: 970776

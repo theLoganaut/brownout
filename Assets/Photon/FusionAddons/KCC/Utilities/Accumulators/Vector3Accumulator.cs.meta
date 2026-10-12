@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 40351cda53db49dfa310bdd8b6c2c7bc
+timeCreated: 1709744010
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/FusionAddons/KCC/Utilities/Accumulators/Vector3Accumulator.cs
+  uploadId: 970776

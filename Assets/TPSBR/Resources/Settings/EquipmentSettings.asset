@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2046bb8a717f88048946c639e47c2e59, type: 3}
+  m_Name: EquipmentSettings
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.EquipmentSettings
+  PressToRelease: 0.65
+  PressToGunReady: 1.4
+  ThrowSpeed: 35
+  ThrowForward: 0.4
+  FragFuse: 3
+  SmokeFuse: 1.8
+  FlashFuse: 1.5
+  ConcussionFuse: 1.5
+  FullEffectRadius: 6
+  MaxRadius: 10
+  EdgeEffect: 0.25
+  FragDamage: 120
+  ArmorCutsFrags: 1
+  SmokeDiameter: 6
+  SmokeGrowTime: 2.2
+  SmokeDuration: 15
+  SmokeFadeTime: 2
+  FlashMaxDuration: 4
+  FlashFacingAwayMultiplier: 0.3
+  ConcussionMaxDuration: 4
+  ConcussionSlow: 0.5
+  ConcussionSlowTime: 2
+  GrappleDeployTime: 0.5
+  GrappleHookTime: 0.15
+  GrapplePullTime: 1.3
+  GrappleRecoverTime: 0.55
+  GrappleMissRecover: 0.35
+  GrappleRange: 40
+  GrapplePulls: 3
+  GrappleWallDrop: 0.5
+  GrappleStopDistance: 0.3
+  GrappleEndLift: 5
+  GrappleEndForward: 3
+  GearSeconds: 10
+  DoubleTimeMultiplier: 1.4
+  NinjaRangeMultiplier: 0.5
+  O2MaxBreathTime: 8
+  O2MaxRecoil: 0.75
+  SixthSenseInterval: 2
+  SixthSenseFade: 1
+  CamouflageVisibility: 0.15
+  CamouflageStillSpeed: 0.2
+  CamouflageStillTime: 0.3
+  FootstepRange: 10
+  SprintRange: 20
+  DummyEquipment: 0
+  DummyGear: 1
+  EquipmentColors:
+  - {r: 0.3, g: 0.38, b: 0.22, a: 1}
+  - {r: 0.75, g: 0.75, b: 0.75, a: 1}
+  - {r: 0.95, g: 0.95, b: 0.55, a: 1}
+  - {r: 0.3, g: 0.65, b: 0.85, a: 1}
+  - {r: 0.85, g: 0.45, b: 0.1, a: 1}
+  GearColors:
+  - {r: 0.2, g: 0.85, b: 0.85, a: 1}
+  - {r: 0.95, g: 0.85, b: 0.1, a: 1}
+  - {r: 0.15, g: 0.15, b: 0.18, a: 1}
+  - {r: 0.85, g: 0.2, b: 0.55, a: 1}
+  - {r: 0.35, g: 0.55, b: 0.3, a: 1}
+  - {r: 0.3, g: 0.5, b: 0.95, a: 1}
+  GrenadePrefabs:
+  - {fileID: 4277888676774824892, guid: ec623b358d5c4024285c5bbe37de2b89, type: 3}
+  - {fileID: 9105724515599064402, guid: f58cf669b1f324f448da4b73ca39b7d4, type: 3}
+  - {fileID: 1804314541318750671, guid: ca3eb738d4060ac43a92ab93f5a88392, type: 3}
+  - {fileID: 1804314541318750671, guid: 4e9b9baccc33253428f18c8bb6e1666c, type: 3}

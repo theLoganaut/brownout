@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 733ea2161edbb00469d77b212cecde98
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/KriptoFX/MuzzleFlashes/Shaders/Rocks.shader
+  uploadId: 970776

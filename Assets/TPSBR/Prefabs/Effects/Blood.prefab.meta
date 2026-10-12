@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 66fa5978c1677c846a35b015f584a286
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/Effects/Blood.prefab
+  uploadId: 970776

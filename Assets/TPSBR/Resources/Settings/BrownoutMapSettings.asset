@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ecad305b22a46a44865637b48aa8c09, type: 3}
+  m_Name: BrownoutMapSettings
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.BrownoutMapSettings
+  Seed: 8
+  TerrainSize: 1600
+  HeightmapResolution: 1025
+  AlphamapResolution: 1024
+  DetailResolution: 1024
+  TerrainBottom: -10
+  TerrainHeight: 60
+  HeightCell: 4
+  BandRamp: 100
+  HeightBlur: 14
+  HillShare: 0.4
+  HillMinimum: 6
+  HillRiverClear: 20
+  BankMoundHeight: 8
+  BankMoundScale: 30
+  BankMoundReach: 80
+  HillScale: 55
+  HillContrast: 1.8
+  BumpHeight: 0.8
+  BumpScale: 35
+  PadTiltKept: 0.1
+  PadFalloff: 40
+  RoadSmoothing: 40
+  RoadShoulder: 10
+  TrailShoulder: 5
+  RiverDepth: 3
+  WaterDepth: 0.6
+  ValleyHalfWidth: 11
+  RiverSmoothing: 80
+  RiverExtension: 320
+  WallHeight: 40
+  WallThickness: 0.5
+  BankPutDistance: 2
+  BridgeWidth: 8
+  BridgeOverhang: 4
+  BridgeThickness: 0.6
+  BridgeRailHeight: 1
+  BridgeClearance: 2.5
+  BridgeRampLength: 30
+  TreeCell: 9
+  TreeChance: 0.42
+  BushCell: 8
+  BushChance: 0.22
+  BushColliderRadius: 0.95
+  BushColliderHeight: 0.6
+  SmallRockCell: 16
+  SmallRockChance: 0.25
+  MediumRocks: 450
+  LargeRocks: 110
+  PoiDensity: 0.12
+  CabinDensity: 0.35
+  RoadClearance: 3
+  TrailClearance: 1.5
+  GrassDensity: 3
+  GrassDistance: 80
+  TreeDrawDistance: 500
+  TreeLodDistance: 110
+  SmallNatureDrawDistance: 130
+  NavMargin: 30
+  NavAgentRadius: 0.2
+  NavAgentHeight: 2
+  NavStepHeight: 0.45
+  NavMaxSlope: 45
+  NavVoxelSize: 0.1
+  NavTileSize: 256
+  DoorOpenAngle: 90
+  DoorSwingTime: 0.3
+  DoorPushReach: 0.35
+  DoorCloseReach: 2.5
+  DoorStepMinimum: 0.2
+  DoorRampAngle: 25
+  BuildingClearance: 2
+  LightRange: 14
+  LightIntensity: 2.5
+  LootSpacing: 1.5
+  LootTreeClearance: 1.2
+  LootMaxSlope: 30
+  MapImageResolution: 2048
+  GridCells: 10
+  Grass: {r: 0.36, g: 0.5, b: 0.25, a: 1}
+  GrassDry: {r: 0.52, g: 0.55, b: 0.3, a: 1}
+  Dirt: {r: 0.47, g: 0.38, b: 0.27, a: 1}
+  Rock: {r: 0.45, g: 0.44, b: 0.42, a: 1}
+  Road: {r: 0.33, g: 0.31, b: 0.29, a: 1}
+  Trail: {r: 0.58, g: 0.48, b: 0.34, a: 1}
+  Water: {r: 0.16, g: 0.36, b: 0.48, a: 1}
+  Trunk: {r: 0.33, g: 0.24, b: 0.16, a: 1}
+  Pine: {r: 0.16, g: 0.32, b: 0.18, a: 1}
+  Leaves: {r: 0.3, g: 0.46, b: 0.2, a: 1}
+  DeadWood: {r: 0.4, g: 0.36, b: 0.31, a: 1}
+  Bush: {r: 0.26, g: 0.42, b: 0.19, a: 1}
+  Stone: {r: 0.5, g: 0.5, b: 0.48, a: 1}
+  Bridge: {r: 0.42, g: 0.4, b: 0.38, a: 1}
+  Steel: {r: 0.3, g: 0.33, b: 0.37, a: 1}
+  Wood: {r: 0.42, g: 0.3, b: 0.19, a: 1}
+  Wall: {r: 0.62, g: 0.6, b: 0.56, a: 1}
+  Floor: {r: 0.45, g: 0.44, b: 0.42, a: 1}
+  Roof: {r: 0.36, g: 0.34, b: 0.33, a: 1}
+  DoorLeaf: {r: 0.46, g: 0.33, b: 0.22, a: 1}
+  PowerDoor: {r: 0.78, g: 0.62, b: 0.12, a: 1}
+  Cover: {r: 0.52, g: 0.5, b: 0.47, a: 1}
+  Machine: {r: 0.34, g: 0.4, b: 0.44, a: 1}
+  Vehicle: {r: 0.33, g: 0.37, b: 0.27, a: 1}
+  Metal: {r: 0.55, g: 0.57, b: 0.6, a: 1}
+  Rail: {r: 0.3, g: 0.28, b: 0.26, a: 1}
+  CabinWall: {r: 0.55, g: 0.42, b: 0.3, a: 1}
+  LampOff: {r: 0.25, g: 0.25, b: 0.25, a: 1}
+  LampOn: {r: 1, g: 0.92, b: 0.7, a: 1}
+  Picture: {fileID: 2800000, guid: b3b9be085548e134288828741afd54c2, type: 3}
+  PoiLabels:
+  - Name: POWER PLANT
+    X: 0.776
+    Y: 0.876
+  - Name: RADIO ARRAY
+    X: 0.308
+    Y: 0.903
+  - Name: DATA CENTER
+    X: 0.203
+    Y: 0.58
+  - Name: TRAIN STATION
+    X: 0.604
+    Y: 0.402
+  - Name: WAREHOUSES
+    X: 0.138
+    Y: 0.235
+  - Name: FACTORY
+    X: 0.792
+    Y: 0.14

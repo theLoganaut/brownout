@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7a27404efc16ce04fb9f3ea1f80a7bb9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/FusionAddons/AnimationController/Runtime/Utilities/AnimationBlendTree.cs
+  uploadId: 970776

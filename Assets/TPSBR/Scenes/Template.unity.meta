@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 90de986267181804788dc2f1d6a31a06
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Scenes/Template.unity
+  uploadId: 970776

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0457f188f2317b84f990b920968e707a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/FusionAddons/KCC/Utilities/SmoothValues/SmoothVector2.cs
+  uploadId: 970776

@@ -1,0 +1,178 @@
+{
+  "about": "Building blockouts per POI and cabin area (phase 8b). Simple shapes, no detail. 'at' is [east, north] in m from the area's center in map_layout.json (so moving a POI there moves its buildings), or from the building's center for pieces 'inside' it; 'rot' is degrees clockwise from north. A building's walls are S (its front), N, E and W; an opening's 'at' is its middle, in m east or north of the wall's middle; 'floor' 0 is the ground floor. Doors and windows take their sizes from map_layout.json unless an opening gives 'width' and 'height'; an 'open' opening has no door leaf (gates). Power doors stay shut while their POI has no power. Piece types: building, block (size [width, depth, height]), cylinder, tower (cooling tower), dish, rails, train, catwalk, vehicle (mech, tank, truck), light, camera, turret, hum, underground; or 'template' with a template's name (a one-piece template takes the reference's fields; its doors, windows and inside are added to). Edit this file, then Brownout > Setup > Build Brownout Map > Buildings.",
+  "defaults": { "wall": 0.25, "floor": 0.3, "floor_height": 3.2, "stair_width": 1.2, "stair_angle": 33, "floor_raise": 0.15 },
+  "templates": {
+    "server_hall": [
+      { "type": "building", "name": "Server hall", "size": [56, 26], "floors": 1, "floor_height": 5.5, "lights": 6,
+        "doors":   [ { "wall": "S", "at": -14 }, { "wall": "S", "at": 14 }, { "wall": "N", "at": -14 }, { "wall": "N", "at": 14 }, { "wall": "E", "at": 0 }, { "wall": "W", "at": 0 } ],
+        "window_every": 7,
+        "inside":  [ { "type": "block", "name": "Racks", "at": [-17, -7], "size": [12, 1, 2.2], "color": "Machine" }, { "type": "block", "name": "Racks", "at": [0, -7], "size": [12, 1, 2.2], "color": "Machine" }, { "type": "block", "name": "Racks", "at": [17, -7], "size": [12, 1, 2.2], "color": "Machine" },
+                     { "type": "block", "name": "Racks", "at": [-17, -2.5], "size": [12, 1, 2.2], "color": "Machine" }, { "type": "block", "name": "Racks", "at": [0, -2.5], "size": [12, 1, 2.2], "color": "Machine" }, { "type": "block", "name": "Racks", "at": [17, -2.5], "size": [12, 1, 2.2], "color": "Machine" },
+                     { "type": "block", "name": "Racks", "at": [-17, 2.5], "size": [12, 1, 2.2], "color": "Machine" }, { "type": "block", "name": "Racks", "at": [0, 2.5], "size": [12, 1, 2.2], "color": "Machine" }, { "type": "block", "name": "Racks", "at": [17, 2.5], "size": [12, 1, 2.2], "color": "Machine" },
+                     { "type": "block", "name": "Racks", "at": [-17, 7], "size": [12, 1, 2.2], "color": "Machine" }, { "type": "block", "name": "Racks", "at": [0, 7], "size": [12, 1, 2.2], "color": "Machine" }, { "type": "block", "name": "Racks", "at": [17, 7], "size": [12, 1, 2.2], "color": "Machine" } ] }
+    ],
+    "warehouse": [
+      { "type": "building", "name": "Warehouse", "size": [44, 26], "floors": 1, "floor_height": 9, "lights": 6,
+        "doors":   [ { "wall": "S", "at": 0, "width": 6, "height": 5, "open": true }, { "wall": "N", "at": 0, "width": 6, "height": 5, "open": true },
+                     { "wall": "S", "at": -15 }, { "wall": "N", "at": 15 }, { "wall": "E", "at": 0 }, { "wall": "W", "at": 0 } ],
+        "window_every": 8 }
+    ],
+    "factory_hall": [
+      { "type": "building", "name": "Factory hall", "size": [48, 34], "floors": 1, "floor_height": 10, "lights": 8,
+        "doors":   [ { "wall": "S", "at": 0, "width": 6, "height": 5, "open": true }, { "wall": "S", "at": 16 }, { "wall": "N", "at": -12 }, { "wall": "N", "at": 12 }, { "wall": "E", "at": 0 }, { "wall": "W", "at": 0 } ],
+        "window_every": 6,
+        "inside":  [ { "type": "catwalk", "name": "Catwalk", "at": [-3, 15.6], "size": [34, 2], "height": 4 },
+                     { "type": "block", "name": "Press", "at": [-12, -4], "size": [4, 4, 3.5], "color": "Machine" },
+                     { "type": "block", "name": "Press", "at": [0, -4], "size": [4, 4, 3.5], "color": "Machine" },
+                     { "type": "block", "name": "Lathe", "at": [12, -4], "size": [5, 2, 1.6], "color": "Machine" },
+                     { "type": "block", "name": "Conveyor", "at": [-2, -11], "size": [36, 1.6, 1.1], "color": "Machine" },
+                     { "type": "block", "name": "Unfinished robot", "at": [-8, 4], "size": [1.6, 1.6, 2.6], "color": "Metal" },
+                     { "type": "block", "name": "Unfinished robot", "at": [6, 4], "size": [1.6, 1.6, 2.6], "color": "Metal" },
+                     { "type": "block", "name": "Assembly frame", "at": [16, 6], "size": [4, 4, 4], "color": "Metal" } ] }
+    ],
+    "cabin": [
+      { "type": "building", "name": "Cabin", "size": [7, 5.5], "floors": 1, "floor_height": 2.9, "roof": "gable", "color": "CabinWall",
+        "doors":   [ { "wall": "S", "at": -1.6 } ],
+        "windows": [ { "wall": "S", "at": 1.6 }, { "wall": "E", "at": 0 }, { "wall": "W", "at": 0 }, { "wall": "N", "at": -1.5 }, { "wall": "N", "at": 1.5 } ],
+        "inside":  [ { "type": "block", "name": "Table", "at": [0.5, 1.4], "size": [1.4, 0.8, 0.78], "color": "Wood" },
+                     { "type": "block", "name": "Bed", "at": [-2.3, 1.5], "size": [1.0, 2.0, 0.5], "color": "Cover" } ] }
+    ]
+  },
+  "areas": {
+    "power_plant": [
+      { "type": "building", "name": "Reactor hall", "at": [0, 25], "size": [40, 28], "floors": 2, "floor_height": 4.5, "lights": 6,
+        "doors":   [ { "wall": "S", "at": -8 }, { "wall": "S", "at": 8 }, { "wall": "N", "at": 0 }, { "wall": "W", "at": -6 }, { "wall": "E", "at": 6 } ],
+        "window_every": 5,
+        "stairs":  { "wall": "W", "at": 6 },
+        "inside":  [ { "type": "cylinder", "name": "Reactor core", "at": [4, 2], "radius": 3.2, "height": 3.6, "color": "Machine" },
+                     { "type": "block", "name": "Console", "at": [-8, -8], "size": [4, 1.2, 1.1], "color": "Machine" },
+                     { "type": "block", "name": "Pipe rack", "at": [13, -6], "size": [1.2, 8, 1.6], "color": "Metal" },
+                     { "type": "block", "name": "Turbine", "at": [-4, 6], "floor": 1, "size": [8, 3, 2.2], "color": "Machine" },
+                     { "type": "block", "name": "Cabinets", "at": [10, 8], "floor": 1, "size": [6, 1, 1.9], "color": "Metal" } ] },
+      { "type": "tower", "name": "Cooling tower west", "at": [-40, 85], "radius": 14, "waist": 10, "top": 11, "height": 30 },
+      { "type": "tower", "name": "Cooling tower east", "at": [36, 88], "radius": 14, "waist": 10, "top": 11, "height": 30 },
+      { "type": "building", "name": "Control building", "at": [-40, -40], "size": [18, 12], "floors": 2, "lights": 2,
+        "doors":   [ { "wall": "N", "at": -4 }, { "wall": "E", "at": 0 } ], "window_every": 4, "stairs": { "wall": "S", "at": 4 },
+        "inside":  [ { "type": "block", "name": "Desks", "at": [2, 2], "size": [5, 1, 0.8], "color": "Cover" } ] },
+      { "type": "building", "name": "Workshop", "at": [36, -42], "size": [22, 12], "floors": 1, "floor_height": 5, "lights": 2,
+        "doors":   [ { "wall": "N", "at": -6, "width": 4, "height": 4, "open": true }, { "wall": "W", "at": 0 } ], "window_every": 5,
+        "inside":  [ { "type": "block", "name": "Workbench", "at": [4, 3], "size": [5, 1.2, 1.0], "color": "Metal" }, { "type": "block", "name": "Crates", "at": [-6, 3], "size": [2, 2, 1.5], "color": "Wood" } ] },
+      { "type": "building", "name": "Office", "at": [-10, -62], "size": [12, 10], "floors": 1, "lights": 1,
+        "doors":   [ { "wall": "N", "at": 2 } ], "window_every": 3.5 },
+      { "type": "block", "name": "Transformer", "at": [30, -8], "size": [5, 3, 3], "color": "Machine" },
+      { "type": "block", "name": "Transformer", "at": [40, -8], "size": [5, 3, 3], "color": "Machine" },
+      { "type": "block", "name": "Tank", "at": [-30, 52], "size": [6, 6, 4], "color": "Metal" },
+      { "type": "light", "at": [0, 0] }, { "type": "light", "at": [-25, -15] }, { "type": "light", "at": [25, 60] },
+      { "type": "underground", "name": "Reactor level", "at": [0, 25], "size": [64, 48], "depth": 8, "height": 4.5, "lights": 8,
+        "entrances": [ { "at": [-26.5, 0], "rot": 0 }, { "at": [26.5, 0], "rot": 180 }, { "at": [0, -20], "rot": 90 } ],
+        "inside": [ { "type": "cylinder", "name": "Reactor", "at": [0, 4], "radius": 5, "height": 4.5, "color": "Machine" },
+                    { "type": "block", "name": "Coolant pump", "at": [-14, 12], "size": [4, 3, 2.2], "color": "Metal" },
+                    { "type": "block", "name": "Coolant pump", "at": [14, 12], "size": [4, 3, 2.2], "color": "Metal" },
+                    { "type": "block", "name": "Control desk", "at": [0, -10], "size": [8, 1.2, 1.1], "color": "Machine" },
+                    { "type": "block", "name": "Pipe run", "at": [-14, -6], "size": [1.2, 10, 1.4], "color": "Metal" },
+                    { "type": "block", "name": "Pipe run", "at": [14, -6], "size": [1.2, 10, 1.4], "color": "Metal" },
+                    { "type": "block", "name": "Racks", "at": [0, 18], "size": [16, 1, 2.0], "color": "Machine" } ] }
+    ],
+    "radio_array": [
+      { "type": "building", "name": "Tower", "at": [0, 0], "size": [8, 8], "floors": 4, "roof_access": true, "parapet": 1.0, "lights": 1,
+        "doors":   [ { "wall": "S", "at": -1.8 }, { "wall": "N", "at": -1.8, "power": true }, { "wall": "W", "at": -1.8, "power": true } ],
+        "windows": [ { "wall": "S", "at": 1.8, "floor": 0 }, { "wall": "N", "at": 1.8, "floor": 0 },
+                     { "wall": "S", "at": -1.8, "floor": 1 }, { "wall": "S", "at": 1.8, "floor": 1 }, { "wall": "N", "at": -1.8, "floor": 1 }, { "wall": "N", "at": 1.8, "floor": 1 }, { "wall": "W", "at": -1.8, "floor": 1 }, { "wall": "W", "at": 1.8, "floor": 1 },
+                     { "wall": "S", "at": -1.8, "floor": 2 }, { "wall": "S", "at": 1.8, "floor": 2 }, { "wall": "N", "at": -1.8, "floor": 2 }, { "wall": "N", "at": 1.8, "floor": 2 }, { "wall": "W", "at": -1.8, "floor": 2 }, { "wall": "W", "at": 1.8, "floor": 2 },
+                     { "wall": "S", "at": -1.8, "floor": 3 }, { "wall": "S", "at": 1.8, "floor": 3 }, { "wall": "N", "at": -1.8, "floor": 3 }, { "wall": "N", "at": 1.8, "floor": 3 }, { "wall": "W", "at": -1.8, "floor": 3 }, { "wall": "W", "at": 1.8, "floor": 3 } ],
+        "stairs":  { "wall": "E", "at": 0 },
+        "inside":  [ { "type": "camera", "name": "Camera monitors", "at": [-2.4, 2.6], "floor": 2 } ] },
+      { "type": "dish", "name": "Dish west", "at": [-80, 18], "radius": 10, "height": 7, "tilt": 40, "facing": 200 },
+      { "type": "dish", "name": "Dish north", "at": [-30, 50], "radius": 8, "height": 6, "tilt": 45, "facing": 150 },
+      { "type": "dish", "name": "Dish east", "at": [82, 20], "radius": 10, "height": 7, "tilt": 40, "facing": 160 },
+      { "type": "building", "name": "Shed west", "at": [-24, -22], "size": [8, 6], "floors": 1, "floor_height": 3, "lights": 1,
+        "doors": [ { "wall": "E", "at": 0 } ], "windows": [ { "wall": "S", "at": 0 }, { "wall": "N", "at": 0 } ] },
+      { "type": "building", "name": "Shed east", "at": [26, -22], "size": [8, 6], "floors": 1, "floor_height": 3, "lights": 1,
+        "doors": [ { "wall": "W", "at": 0 } ], "windows": [ { "wall": "S", "at": 0 }, { "wall": "N", "at": 0 } ] },
+      { "type": "block", "name": "Generator", "at": [10, -14], "size": [3, 2, 1.8], "color": "Machine" },
+      { "type": "block", "name": "Cable drum", "at": [-55, 0], "size": [2, 2, 1.2], "color": "Wood" },
+      { "type": "block", "name": "Cable drum", "at": [55, 0], "size": [2, 2, 1.2], "color": "Wood" },
+      { "type": "light", "at": [-12, 8] }, { "type": "light", "at": [12, -8] }
+    ],
+    "data_center": [
+      { "template": "server_hall", "type": "building", "name": "North hall", "at": [20, 70] },
+      { "template": "server_hall", "type": "building", "name": "Middle hall", "at": [20, 5] },
+      { "template": "server_hall", "type": "building", "name": "South hall", "at": [20, -60] },
+      { "type": "hum", "name": "Server hum", "at": [20, 5] },
+      { "type": "block", "name": "Cooling unit", "at": [60, 38], "size": [6, 4, 2.6], "color": "Machine" },
+      { "type": "block", "name": "Cooling unit", "at": [60, -27], "size": [6, 4, 2.6], "color": "Machine" },
+      { "type": "block", "name": "Generator", "at": [-20, 38], "size": [5, 3, 2.4], "color": "Machine" },
+      { "type": "light", "at": [20, 38] }, { "type": "light", "at": [20, -27] }
+    ],
+    "train_station": [
+      { "type": "building", "name": "Station building", "at": [0, 32], "size": [34, 12], "floors": 2, "lights": 3,
+        "doors":   [ { "wall": "S", "at": -8 }, { "wall": "S", "at": 8 }, { "wall": "N", "at": 0 }, { "wall": "E", "at": 0 }, { "wall": "W", "at": 0 } ],
+        "window_every": 4, "stairs": { "wall": "N", "at": -9 },
+        "inside":  [ { "type": "block", "name": "Ticket counter", "at": [4, 1], "size": [8, 1, 1.1], "color": "Wood" },
+                     { "type": "block", "name": "Benches", "at": [-6, -2], "size": [5, 0.6, 0.5], "color": "Wood" } ] },
+      { "type": "block", "name": "Platform", "at": [10, 14], "size": [150, 7, 1.0], "color": "Cover", "ramps": true },
+      { "type": "block", "name": "Platform roof post", "at": [-30, 16], "size": [0.4, 0.4, 3.8], "color": "Metal" },
+      { "type": "block", "name": "Platform roof post", "at": [10, 16], "size": [0.4, 0.4, 3.8], "color": "Metal" },
+      { "type": "block", "name": "Platform roof post", "at": [50, 16], "size": [0.4, 0.4, 3.8], "color": "Metal" },
+      { "type": "block", "name": "Platform roof", "at": [10, 15], "y": 3.8, "size": [90, 5, 0.25], "color": "Roof" },
+      { "type": "rails", "name": "Tracks", "at": [12, -13], "length": 205, "tracks": 4, "spacing": 10 },
+      { "type": "train", "name": "Train 1", "at": [-38, 2], "cars": ["closed", "open", "closed", "closed", "open", "closed"] },
+      { "type": "train", "name": "Train 2", "at": [30, -18], "cars": ["open", "closed", "closed", "open", "closed"] },
+      { "type": "train", "name": "Train 3", "at": [50, -28], "cars": ["closed", "closed", "open", "closed", "open", "closed"] },
+      { "type": "building", "name": "Signal box", "at": [92, 30], "size": [8, 6], "floors": 2, "floor_height": 3, "lights": 1,
+        "doors": [ { "wall": "W", "at": 0 } ], "window_every": 2.5, "stairs": { "wall": "N", "at": 0 } },
+      { "type": "block", "name": "Freight crates", "at": [-60, 40], "size": [6, 2.5, 2.5], "color": "Wood" },
+      { "type": "block", "name": "Freight crates", "at": [-52, 46], "size": [2.5, 6, 2.5], "color": "Wood" },
+      { "type": "block", "name": "Container", "at": [62, 45], "size": [12, 2.5, 2.6], "color": "Vehicle" },
+      { "type": "light", "at": [-20, 22] }, { "type": "light", "at": [40, 22] }
+    ],
+    "warehouses": [
+      { "template": "warehouse", "type": "building", "name": "Northwest warehouse", "at": [-58, 22], "inside": [
+        { "type": "vehicle", "kind": "mech", "at": [-10, 0] }, { "type": "vehicle", "kind": "tank", "at": [8, 3], "rot": 90 }, { "type": "block", "name": "Crates", "at": [16, -8], "size": [3, 2, 2], "color": "Wood" } ] },
+      { "template": "warehouse", "type": "building", "name": "Northeast warehouse", "at": [54, 22], "inside": [
+        { "type": "vehicle", "kind": "truck", "at": [-9, 2], "rot": 90 }, { "type": "vehicle", "kind": "mech", "at": [10, 0] }, { "type": "block", "name": "Crates", "at": [-16, -8], "size": [3, 2, 2], "color": "Wood" } ] },
+      { "template": "warehouse", "type": "building", "name": "Southwest warehouse", "at": [-58, -22], "inside": [
+        { "type": "vehicle", "kind": "tank", "at": [-8, -2], "rot": 90 }, { "type": "vehicle", "kind": "truck", "at": [10, 2], "rot": 90 }, { "type": "block", "name": "Crates", "at": [16, 8], "size": [3, 2, 2], "color": "Wood" } ] },
+      { "template": "warehouse", "type": "building", "name": "Southeast warehouse", "at": [54, -22], "inside": [
+        { "type": "vehicle", "kind": "mech", "at": [-12, 0] }, { "type": "vehicle", "kind": "mech", "at": [0, 3] }, { "type": "vehicle", "kind": "tank", "at": [12, -2], "rot": 90 } ] },
+      { "type": "block", "name": "Containers", "at": [-2, 0], "size": [12, 2.5, 2.6], "color": "Vehicle" },
+      { "type": "block", "name": "Containers", "at": [4, 6], "size": [2.5, 12, 2.6], "color": "Vehicle" },
+      { "type": "light", "at": [-2, 12] }, { "type": "light", "at": [-2, -12] }
+    ],
+    "factory": [
+      { "template": "factory_hall", "type": "building", "name": "West hall", "at": [-52, -10] },
+      { "template": "factory_hall", "type": "building", "name": "East hall", "at": [58, -10] },
+      { "type": "block", "name": "Conveyor", "at": [3, -38], "size": [62, 1.6, 1.1], "color": "Machine" },
+      { "type": "block", "name": "Conveyor", "at": [3, -44], "size": [62, 1.6, 1.1], "color": "Machine" },
+      { "type": "block", "name": "Robot frame", "at": [-12, -41], "size": [1.6, 1.6, 2.4], "color": "Metal" },
+      { "type": "block", "name": "Robot frame", "at": [14, -41], "size": [1.6, 1.6, 2.4], "color": "Metal" },
+      { "type": "block", "name": "Loading bay", "at": [3, 18], "size": [10, 6, 1.2], "color": "Cover", "ramps": true },
+      { "type": "turret", "at": [-14, 8] }, { "type": "turret", "at": [20, 8] }, { "type": "turret", "at": [3, -28] },
+      { "type": "turret", "at": [-88, -36] }, { "type": "turret", "at": [96, -36] }, { "type": "turret", "at": [3, -60] },
+      { "type": "light", "at": [3, 0] }, { "type": "light", "at": [3, -50] }
+    ],
+    "cabins_northwest": [
+      { "template": "cabin", "at": [-14, 16], "rot": 15 },
+      { "template": "cabin", "at": [14, 4], "rot": -10 },
+      { "template": "cabin", "at": [-8, -14], "rot": 80 }
+    ],
+    "cabins_ridge": [
+      { "template": "cabin", "at": [-18, 6], "rot": 5 },
+      { "template": "cabin", "at": [8, -10], "rot": -15 },
+      { "template": "cabin", "at": [30, 8], "rot": 10 }
+    ],
+    "cabins_center": [
+      { "template": "cabin", "at": [-55, 18], "rot": 20 },
+      { "template": "cabin", "at": [-32, -12], "rot": -10 },
+      { "template": "cabin", "at": [-58, -30], "rot": 85 },
+      { "template": "cabin", "at": [30, 20], "rot": -15 },
+      { "template": "cabin", "at": [55, -8], "rot": 5 },
+      { "template": "cabin", "at": [36, -34], "rot": -80 }
+    ],
+    "cabins_south": [
+      { "template": "cabin", "at": [-16, 22], "rot": -5 },
+      { "template": "cabin", "at": [10, -4], "rot": 20 },
+      { "template": "cabin", "at": [-8, -26], "rot": 90 }
+    ]
+  }
+}

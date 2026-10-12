@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f97f8513bdb75b9469c2fc2a8aeb7fc1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/Projectiles/Bullet.prefab
+  uploadId: 970776

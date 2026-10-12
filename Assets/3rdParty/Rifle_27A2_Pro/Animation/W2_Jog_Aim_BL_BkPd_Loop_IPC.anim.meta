@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ea66e3c02b6f2c04ea1dc9b11d3a49ac
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/Rifle_27A2_Pro/Animation/W2_Jog_Aim_BL_BkPd_Loop_IPC.anim
+  uploadId: 970776

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e2db04f89ac2ce54a897dba5fd29f63f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/Pistol 27A2 Pro/Animation/W1_Jog_Aim_R_Loop_IPC.anim
+  uploadId: 970776

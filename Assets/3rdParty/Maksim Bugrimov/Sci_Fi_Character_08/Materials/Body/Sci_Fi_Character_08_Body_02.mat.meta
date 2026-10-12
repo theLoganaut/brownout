@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b40c38720e30a9f4ab9477a1291f5c21
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/Maksim Bugrimov/Sci_Fi_Character_08/Materials/Body/Sci_Fi_Character_08_Body_02.mat
+  uploadId: 970776

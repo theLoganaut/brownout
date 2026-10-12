@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e5661dd643b1d478f051c5b774e5db, type: 3}
+  m_Name: HealthSettings
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.HealthSettings
+  MaxHealth: 150
+  HealthCap: 200
+  HealItems:
+  - Item: 0
+    Name: Bandage
+    Amount: 25
+    Cap: 150
+    UseTime: 1
+    Stack: 10
+  - Item: 1
+    Name: Med kit
+    Amount: 75
+    Cap: 150
+    UseTime: 2
+    Stack: 5
+  - Item: 2
+    Name: Trauma kit
+    Amount: 200
+    Cap: 200
+    UseTime: 4
+    Stack: 1
+  SpawnHealItems: 050000000200000001000000
+  ArmorTiers:
+  - BodyCut: 0.3
+    HeadCut: 0
+    Durability: 300
+  - BodyCut: 0.4
+    HeadCut: 0
+    Durability: 450
+  - BodyCut: 0.5
+    HeadCut: 0.3
+    Durability: 600
+  BleedOutTimes:
+  - 30
+  - 20
+  - 10
+  DownedHealth: 50
+  ThirdPersonDelay: 0.45
+  ReviveTime: 3.1
+  RevivedHealth: 50
+  ReviveReach: 2
+  ReviveLookAngle: 45
+  TeamSize: 2

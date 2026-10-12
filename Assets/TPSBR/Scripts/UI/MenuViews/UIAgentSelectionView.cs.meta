@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ca4eec31e510fb14893a954094598efd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Scripts/UI/MenuViews/UIAgentSelectionView.cs
+  uploadId: 970776

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 3e262c2b04eaa8440987b50a91e86674
+DefaultImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.README
+  uploadId: 970776

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 12e456a6d7ebf004fbc4e5903eeb58b6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/UI/Prefabs/GeneralViews/UIJokeDialogView.prefab
+  uploadId: 970776

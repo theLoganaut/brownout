@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f2453b6d81c55ec4c9311e19f46a6bb1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/UI/Prefabs/Buttons/SliderWithText.prefab
+  uploadId: 970776

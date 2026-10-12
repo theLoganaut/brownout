@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ee2d58c11c65e054e84a939a53bd19c1
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/KriptoFX/MuzzleFlashes/Prefab/MuzzleFlashes/MuzzleFlash2_Player.prefab
+  uploadId: 970776

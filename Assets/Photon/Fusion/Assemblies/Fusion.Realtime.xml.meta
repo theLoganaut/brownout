@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 996c79e7ade9ed846b079e9f47d18f48
+labels:
+- FusionCodeDoc
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/Fusion/Assemblies/Fusion.Realtime.xml
+  uploadId: 970776

@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Swivel
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Swivel
+  BasedOn: Swordfish
+  Class: 2
+  FireMode: 2
+  BurstCount: 4
+  Magazine: 36
+  Damage: 31
+  HeadMultiplier: 1.1
+  FireInterval: 0.07
+  BurstCycle: 0.39
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 3.18
+  AmmoInTime: 1.92
+  AmmoInEstimated: 0
+  AdsTime: 0.27
+  AdsZoom: 0
+  Caliber: 2
+  BulletSpeed: 600
+  SwapWeight: 1
+  HolsterTime: 0.25
+  DrawTime: 0.35
+  AdsRecoilSteps:
+  - {x: 0.005, y: 0}
+  - {x: -0.077, y: 0.113}
+  - {x: 0.102, y: 0.119}
+  - {x: -0.003, y: -0.006}
+  - {x: 0.004, y: -0.005}
+  - {x: -0.081, y: 0.124}
+  - {x: 0.081, y: 0.101}
+  - {x: -0.013, y: -0.015}
+  - {x: -0.003, y: -0.015}
+  - {x: 0.021, y: 0.079}
+  - {x: 0.17, y: 0.194}
+  - {x: -0.07, y: 0.09}
+  AdsUpMean: 0.08
+  AdsUpMax: 0.223
+  AdsSideMean: 0.008
+  AdsSideRange: 0.397
+  AdsSettleTime: 0
+  HipClimbPerShot: 0
+  HipSideRange: 0
+  KickBack: 0.055
+  KickPitch: 1.2
+  PunchPitch: 0.55
+  PunchRoll: 0.3
+  KickRecovery: 12
+  OpticsAllowed: []
+  AttachmentsAllowed:
+  - Suppressor
+  - Long Barrel
+  - Extended Mag
+  - Grip
+  BuiltInScopeZoom: 2
+  BuiltInScopeMagnified: 1
+  BuiltInScopeEyeDistance: 0.03
+  BuiltInAttachments:
+  - {fileID: 11400000, guid: 5dfcea6244c6e294489b088e7500545b, type: 2}
+  Model: {fileID: 919132149155446097, guid: 84d3c81808a256146a5b892f0683f8a0, type: 3}

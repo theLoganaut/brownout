@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d418791f83259f14581c3a29b651f7bf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Materials/GenAreaWater.mat
+  uploadId: 970776

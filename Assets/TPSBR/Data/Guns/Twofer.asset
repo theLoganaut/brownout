@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Twofer
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Twofer
+  BasedOn: S6 Stingray
+  Class: 2
+  FireMode: 2
+  BurstCount: 2
+  Magazine: 26
+  Damage: 33
+  HeadMultiplier: 1.1
+  FireInterval: 0.1
+  BurstCycle: 0.272
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 2.95
+  AmmoInTime: 1.62
+  AmmoInEstimated: 1
+  AdsTime: 0.2
+  AdsZoom: 0
+  Caliber: 3
+  BulletSpeed: 600
+  SwapWeight: 2
+  HolsterTime: 0.3
+  DrawTime: 0.4
+  AdsRecoilSteps:
+  - {x: -0.185, y: 0.18}
+  - {x: -0.089, y: 0.287}
+  - {x: -0.183, y: 0.189}
+  - {x: -0.154, y: 0.616}
+  - {x: -0.069, y: 0.168}
+  - {x: -0.299, y: 0.297}
+  AdsUpMean: 0.289
+  AdsUpMax: 0.616
+  AdsSideMean: -0.163
+  AdsSideRange: 0.23
+  AdsSettleTime: 0.233
+  HipClimbPerShot: 0
+  HipSideRange: 0
+  KickBack: 0.055
+  KickPitch: 1.2
+  PunchPitch: 0.55
+  PunchRoll: 0.3
+  KickRecovery: 12
+  OpticsAllowed: []
+  AttachmentsAllowed:
+  - Long Barrel
+  - Foregrip
+  - Extended Mag
+  - Stock
+  - Grip
+  BuiltInScopeZoom: 3
+  BuiltInScopeMagnified: 1
+  BuiltInScopeEyeDistance: 0.03
+  BuiltInAttachments: []
+  Model: {fileID: 919132149155446097, guid: ec918bbeb24497840ace2dd8a1455f62, type: 3}

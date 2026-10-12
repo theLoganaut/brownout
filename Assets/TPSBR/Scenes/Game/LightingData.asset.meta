@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 86e802ccfd41f564199f1b8dbd5f20cc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Scenes/Game/LightingData.asset
+  uploadId: 970776

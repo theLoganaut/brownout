@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 861fabca18036cc4e85a3209f37cb9e6
+timeCreated: 1582801772
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/PBR_Military_Pack/PBR_Weapons_Pack/Materials/Automatic_Rifle05_2.mat
+  uploadId: 970776

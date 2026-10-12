@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c04449c55ef13d94aa3c329830f3d14f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Materials/Glow_SpawnPlace.mat
+  uploadId: 970776

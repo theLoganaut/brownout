@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Icarus
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Icarus
+  BasedOn: ICR-7
+  Class: 0
+  FireMode: 0
+  BurstCount: 1
+  Magazine: 35
+  Damage: 32
+  HeadMultiplier: 1.1
+  FireInterval: 0.1
+  BurstCycle: 0
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 2.63
+  AmmoInTime: 1.18
+  AmmoInEstimated: 0
+  AdsTime: 0.27
+  AdsZoom: 1.427
+  Caliber: 2
+  BulletSpeed: 600
+  SwapWeight: 1
+  HolsterTime: 0.25
+  DrawTime: 0.35
+  AdsRecoilSteps:
+  - {x: -0.001, y: 0.001}
+  - {x: -0.391, y: 0.196}
+  - {x: -0.304, y: 0.382}
+  - {x: -0.288, y: 1.132}
+  - {x: -0.611, y: 1.051}
+  - {x: -0.645, y: 0.932}
+  - {x: -0.541, y: 0.86}
+  - {x: -0.633, y: 1.072}
+  - {x: -0.432, y: 1.034}
+  - {x: -0.193, y: 1.369}
+  - {x: -0.017, y: 0.731}
+  - {x: 0.004, y: 0.101}
+  AdsUpMean: 0.707
+  AdsUpMax: 1.369
+  AdsSideMean: -0.303
+  AdsSideRange: 0.65
+  AdsSettleTime: 0.033
+  HipClimbPerShot: 0.129
+  HipSideRange: 1.706
+  KickBack: 0.045
+  KickPitch: 1
+  PunchPitch: 0.35
+  PunchRoll: 0.25
+  KickRecovery: 14
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  - 4x
+  AttachmentsAllowed:
+  - Suppressor
+  - Long Barrel
+  - Foregrip
+  - Laser Sight
+  - Extended Mag
+  - Fast Mag
+  - Stock
+  - Grip
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments: []
+  Model: {fileID: 919132149155446097, guid: 5c0a1c69449f62448bd5fc81a877eb4c, type: 3}

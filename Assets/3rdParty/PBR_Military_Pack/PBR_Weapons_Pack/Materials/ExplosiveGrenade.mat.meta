@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7b283f089e3803a4b89f1d850c79356b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/PBR_Military_Pack/PBR_Weapons_Pack/Materials/ExplosiveGrenade.mat
+  uploadId: 970776

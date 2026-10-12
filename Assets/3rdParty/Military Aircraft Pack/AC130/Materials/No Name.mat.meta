@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8e86f12937ae89241a7e53669d5e64ec
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/Military Aircraft Pack/AC130/Materials/No Name.mat
+  uploadId: 970776

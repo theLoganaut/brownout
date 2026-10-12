@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9d6d0d4a174d25743a53619aa833c232
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/UI/Prefabs/GameplayViews/UIDeathView.prefab
+  uploadId: 970776

@@ -1,0 +1,20 @@
+{
+    "name": "Fusion.Addons.InterestManagement.Editor",
+    "rootNamespace": "Fusion.Addons.InterestManagement.Editor",
+    "references": [
+        "Fusion.Unity",
+        "Fusion.Unity.Editor",
+        "Fusion.Addons.InterestManagement"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

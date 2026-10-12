@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e1ddc25cb11882742a0acff05c6c2fca
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/FusionAddons/KCC/Attributes/KCCLayerAtribute.cs
+  uploadId: 970776

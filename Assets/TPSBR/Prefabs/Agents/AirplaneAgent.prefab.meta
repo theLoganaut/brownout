@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: af8e52ecf47dccc448a889075bde48ee
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/Agents/AirplaneAgent.prefab
+  uploadId: 970776

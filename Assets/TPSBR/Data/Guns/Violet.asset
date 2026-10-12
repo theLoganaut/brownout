@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Violet
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Violet
+  BasedOn: Vendetta
+  Class: 3
+  FireMode: 1
+  BurstCount: 1
+  Magazine: 20
+  Damage: 60
+  HeadMultiplier: 1.5
+  FireInterval: 0.17
+  BurstCycle: 0
+  FireIntervalIsLowerBound: 1
+  ReloadTime: 3.17
+  AmmoInTime: 1.74
+  AmmoInEstimated: 1
+  AdsTime: 0.4
+  AdsZoom: 0
+  Caliber: 2
+  BulletSpeed: 900
+  SwapWeight: 3
+  HolsterTime: 0.85
+  DrawTime: 0.55
+  AdsRecoilSteps: []
+  AdsUpMean: 0
+  AdsUpMax: 0
+  AdsSideMean: 0
+  AdsSideRange: 0
+  AdsSettleTime: 0
+  HipClimbPerShot: 0
+  HipSideRange: 0
+  KickBack: 0.09
+  KickPitch: 2.5
+  PunchPitch: 1.3
+  PunchRoll: 0.6
+  KickRecovery: 8
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  - 4x
+  AttachmentsAllowed:
+  - Suppressor
+  - Extended Mag
+  - Stock
+  - Grip
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments:
+  - {fileID: 11400000, guid: 10afe2ab7f68b0045870344b14e55fc4, type: 2}
+  Model: {fileID: 919132149155446097, guid: cf4054507974d0947a106cba8d6b42c0, type: 3}

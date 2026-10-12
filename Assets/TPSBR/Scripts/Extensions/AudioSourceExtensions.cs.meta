@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 760140806c784d5c9da4dc50cc1f9379
+timeCreated: 1629098455
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Scripts/Extensions/AudioSourceExtensions.cs
+  uploadId: 970776

@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Savant
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Savant
+  BasedOn: Saug 9mm
+  Class: 1
+  FireMode: 0
+  BurstCount: 1
+  Magazine: 36
+  Damage: 25
+  HeadMultiplier: 1.1
+  FireInterval: 0.066
+  BurstCycle: 0
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 2.33
+  AmmoInTime: 1.32
+  AmmoInEstimated: 0
+  AdsTime: 0.22
+  AdsZoom: 0
+  Caliber: 1
+  BulletSpeed: 400
+  SwapWeight: 0
+  HolsterTime: 0.2
+  DrawTime: 0.3
+  AdsRecoilSteps:
+  - {x: -0.219, y: 0.098}
+  - {x: -0.681, y: 0.346}
+  - {x: -0.477, y: 0.804}
+  - {x: 0.242, y: 1.319}
+  - {x: 0.738, y: 1.522}
+  - {x: 1.266, y: 1.912}
+  - {x: 1.881, y: 1.825}
+  - {x: 1.594, y: 2.039}
+  - {x: 1.622, y: 2.736}
+  - {x: 2.01, y: 2.846}
+  - {x: 1.759, y: 2.369}
+  - {x: -0.217, y: 0.116}
+  AdsUpMean: 1.444
+  AdsUpMax: 2.846
+  AdsSideMean: 0.722
+  AdsSideRange: 2.752
+  AdsSettleTime: 0.05
+  HipClimbPerShot: 0.191
+  HipSideRange: 5.072
+  KickBack: 0.035
+  KickPitch: 0.8
+  PunchPitch: 0.25
+  PunchRoll: 0.2
+  KickRecovery: 16
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  AttachmentsAllowed:
+  - Suppressor
+  - Foregrip
+  - Extended Mag
+  - Fast Mag
+  - Stock
+  - Grip
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments: []
+  Model: {fileID: 919132149155446097, guid: 98d300affb67dd544aea05aff5ef104f, type: 3}

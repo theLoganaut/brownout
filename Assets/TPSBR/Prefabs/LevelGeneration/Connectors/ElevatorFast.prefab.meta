@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d0bee6367ed69cd479961ca6458d20ea
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/LevelGeneration/Connectors/ElevatorFast.prefab
+  uploadId: 970776

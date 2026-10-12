@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 457e3c303930b604cbbc6f4be7779c98
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/KriptoFX/MuzzleFlashes/Prefab/Stone1.prefab
+  uploadId: 970776

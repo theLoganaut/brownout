@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6797e95045b33004c96eab0d19ce289a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Materials/Menu/MenuSmoke.mat
+  uploadId: 970776

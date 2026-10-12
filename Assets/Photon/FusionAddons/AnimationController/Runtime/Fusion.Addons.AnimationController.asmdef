@@ -1,0 +1,20 @@
+{
+    "name": "Fusion.Addons.AnimationController",
+    "rootNamespace": "Fusion.Addons.AnimationController",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "",
+            "define": "FUSION_FORCE_WEAVING"
+        }
+    ],
+    "noEngineReferences": false
+}

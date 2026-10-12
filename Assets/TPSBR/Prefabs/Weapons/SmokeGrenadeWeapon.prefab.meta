@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0dbfb718ef6139344b73ef9132f120d6
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/Weapons/SmokeGrenadeWeapon.prefab
+  uploadId: 970776

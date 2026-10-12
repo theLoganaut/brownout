@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e81757aafc3eb064585afc17aca635cc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/UI/Fonts/Barlow-SemiBold SDF.asset
+  uploadId: 970776

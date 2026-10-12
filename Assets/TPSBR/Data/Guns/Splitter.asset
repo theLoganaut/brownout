@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Splitter
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Splitter
+  BasedOn: Spitfire
+  Class: 1
+  FireMode: 0
+  BurstCount: 1
+  Magazine: 34
+  Damage: 24
+  HeadMultiplier: 1.1
+  FireInterval: 0.058
+  BurstCycle: 0
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 2.33
+  AmmoInTime: 1.55
+  AmmoInEstimated: 0
+  AdsTime: 0.25
+  AdsZoom: 1.262
+  Caliber: 0
+  BulletSpeed: 400
+  SwapWeight: 0
+  HolsterTime: 0.2
+  DrawTime: 0.3
+  AdsRecoilSteps:
+  - {x: -0.019, y: -0.002}
+  - {x: -0.223, y: 0.223}
+  - {x: -0.695, y: 0.671}
+  - {x: -1.119, y: 0.825}
+  - {x: -1.142, y: 1.506}
+  - {x: -0.9, y: 1.431}
+  - {x: 0.068, y: 2.608}
+  - {x: 0.195, y: 2.698}
+  - {x: -0.117, y: 0.311}
+  - {x: -0.339, y: 0.576}
+  - {x: -1.057, y: 0.998}
+  - {x: -1.335, y: 1.188}
+  AdsUpMean: 1.662
+  AdsUpMax: 3.116
+  AdsSideMean: -0.316
+  AdsSideRange: 2.168
+  AdsSettleTime: 0.2
+  HipClimbPerShot: 0.035
+  HipSideRange: 4.804
+  KickBack: 0.035
+  KickPitch: 0.8
+  PunchPitch: 0.25
+  PunchRoll: 0.2
+  KickRecovery: 16
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  AttachmentsAllowed:
+  - Laser Sight
+  - Extended Mag
+  - Fast Mag
+  - Stock
+  - Grip
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments: []
+  Model: {fileID: 919132149155446097, guid: d47bd1a64e8f6c643bd1bcd64e44e1b6, type: 3}

@@ -1,0 +1,114 @@
+{
+  "about": "Loot spots per POI and cabin area (phase 8, Logan 6 Oct). [E, N] from the map's southwest corner, like map_layout.json. Each spot scatters 'count' loot points inside its radius (m); top_tier gives better odds of tier 3 armor and trauma kits. Since 8b a spot can set 'floors' (0 the ground or a building's ground floor, 1, 2... the floors above, -1 underground; missing = [0]) and 'indoors' (only under a roof: inside buildings and train cars). Edit with Brownout > Map > Loot Spots, which saves this file and rebuilds only the loot points.",
+  "areas": [
+    {
+      "id": "power_plant",
+      "name": "Power Plant",
+      "density": "medium above ground (30), top-tier underground (30)",
+      "spots": [
+        { "name": "Reactor hall", "at": [776, 901], "radius": 17, "count": 10, "top_tier": false, "floors": [0, 1], "indoors": true },
+        { "name": "North yard", "at": [776, 948], "radius": 30, "count": 6, "top_tier": false },
+        { "name": "Control building and office", "at": [748, 826], "radius": 20, "count": 8, "top_tier": false, "indoors": true },
+        { "name": "Workshop", "at": [812, 834], "radius": 10, "count": 6, "top_tier": false, "indoors": true },
+        { "name": "Underground", "at": [776, 901], "radius": 28, "count": 30, "top_tier": true, "floors": [-1] }
+      ]
+    },
+    {
+      "id": "radio_array",
+      "name": "Radio Array",
+      "density": "medium (35)",
+      "spots": [
+        { "name": "Tower", "at": [308, 903], "radius": 4.5, "count": 10, "top_tier": false, "floors": [0, 1, 2, 3, 4] },
+        { "name": "West dishes", "at": [238, 928], "radius": 30, "count": 8, "top_tier": false },
+        { "name": "East dishes", "at": [383, 921], "radius": 30, "count": 8, "top_tier": false },
+        { "name": "Sheds", "at": [308, 881], "radius": 30, "count": 9, "top_tier": false }
+      ]
+    },
+    {
+      "id": "data_center",
+      "name": "Data Center",
+      "density": "medium (35)",
+      "spots": [
+        { "name": "North hall", "at": [223, 650], "radius": 27, "count": 12, "top_tier": false, "indoors": true },
+        { "name": "Middle hall", "at": [223, 585], "radius": 27, "count": 12, "top_tier": false, "indoors": true },
+        { "name": "South hall", "at": [223, 520], "radius": 27, "count": 11, "top_tier": false, "indoors": true }
+      ]
+    },
+    {
+      "id": "train_station",
+      "name": "Train Station",
+      "density": "medium (35)",
+      "spots": [
+        { "name": "Station building", "at": [604, 434], "radius": 16, "count": 10, "top_tier": false, "floors": [0, 1], "indoors": true },
+        { "name": "West yard", "at": [534, 427], "radius": 30, "count": 8, "top_tier": false },
+        { "name": "East yard", "at": [679, 427], "radius": 30, "count": 8, "top_tier": false },
+        { "name": "Train cars", "at": [609, 390], "radius": 60, "count": 9, "top_tier": false, "indoors": true }
+      ]
+    },
+    {
+      "id": "warehouses",
+      "name": "Warehouses",
+      "density": "medium-high (45)",
+      "spots": [
+        { "name": "Northwest warehouse", "at": [80, 257], "radius": 20, "count": 11, "top_tier": false, "indoors": true },
+        { "name": "Northeast warehouse", "at": [192, 257], "radius": 20, "count": 11, "top_tier": false, "indoors": true },
+        { "name": "Southwest warehouse", "at": [80, 213], "radius": 20, "count": 11, "top_tier": false, "indoors": true },
+        { "name": "Southeast warehouse", "at": [192, 213], "radius": 20, "count": 12, "top_tier": false, "indoors": true }
+      ]
+    },
+    {
+      "id": "factory",
+      "name": "Factory",
+      "density": "top-tier (45)",
+      "spots": [
+        { "name": "West hall", "at": [740, 130], "radius": 22, "count": 15, "top_tier": true, "indoors": true },
+        { "name": "East hall", "at": [850, 130], "radius": 22, "count": 15, "top_tier": true, "indoors": true },
+        { "name": "Conveyor line", "at": [795, 99], "radius": 25, "count": 8, "top_tier": true },
+        { "name": "Turret yard", "at": [795, 145], "radius": 20, "count": 7, "top_tier": true }
+      ]
+    },
+    {
+      "id": "cabins_northwest",
+      "name": "Cabins, northwest corner",
+      "density": "2 per cabin (3 cabins)",
+      "spots": [
+        { "name": "Cabin 1", "at": [37, 956], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true },
+        { "name": "Cabin 2", "at": [65, 944], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true },
+        { "name": "Cabin 3", "at": [43, 926], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true }
+      ]
+    },
+    {
+      "id": "cabins_ridge",
+      "name": "Cabins, south of Radio Array",
+      "density": "2 per cabin (3 cabins)",
+      "spots": [
+        { "name": "Cabin 1", "at": [349, 742], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true },
+        { "name": "Cabin 2", "at": [375, 726], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true },
+        { "name": "Cabin 3", "at": [397, 744], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true }
+      ]
+    },
+    {
+      "id": "cabins_center",
+      "name": "Cabins, center",
+      "density": "2 per cabin (6 cabins)",
+      "spots": [
+        { "name": "Cabin 1", "at": [600, 659], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true },
+        { "name": "Cabin 2", "at": [623, 629], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true },
+        { "name": "Cabin 3", "at": [597, 611], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true },
+        { "name": "Cabin 4", "at": [685, 661], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true },
+        { "name": "Cabin 5", "at": [710, 633], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true },
+        { "name": "Cabin 6", "at": [691, 607], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true }
+      ]
+    },
+    {
+      "id": "cabins_south",
+      "name": "Cabins, south edge",
+      "density": "2 per cabin (3 cabins)",
+      "spots": [
+        { "name": "Cabin 1", "at": [332, 87], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true },
+        { "name": "Cabin 2", "at": [358, 61], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true },
+        { "name": "Cabin 3", "at": [340, 39], "radius": 2.5, "count": 2, "top_tier": false, "indoors": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2cddb466a60d47b4d9df71bcf0fd16b5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/PBR_Military_Pack/Characters/Elite_Soldiers/Models/BackPack/Mesh/BackPack_detail_Mesh.mesh
+  uploadId: 970776

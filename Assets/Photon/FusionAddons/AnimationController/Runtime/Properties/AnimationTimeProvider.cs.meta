@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a5d20e9e533ac0a458a6bdf9e57067ed
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/FusionAddons/AnimationController/Runtime/Properties/AnimationTimeProvider.cs
+  uploadId: 970776

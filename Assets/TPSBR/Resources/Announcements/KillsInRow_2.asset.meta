@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c5c290ff99e9bf0429e5b9dff1274609
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Resources/Announcements/KillsInRow_2.asset
+  uploadId: 970776

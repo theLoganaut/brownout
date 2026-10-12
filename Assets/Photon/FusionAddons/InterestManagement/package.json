@@ -1,0 +1,8 @@
+{
+  "name": "com.photonengine.fusion-interest-management",
+  "displayName": "Fusion Interest Management",
+  "version": "2.1.0",
+  "documentationUrl": "https://doc.photonengine.com/fusion/current/addons/interest-management/overview",
+  "description": "The Interest Management addon extends Fusion's Area of Interest with tools to control interest from player and world objects perspective. It provides interest shapes (sphere, box, cone), custom interest providers with filtering rules and editor workflow with gizmo previews.",
+  "author": ""
+}

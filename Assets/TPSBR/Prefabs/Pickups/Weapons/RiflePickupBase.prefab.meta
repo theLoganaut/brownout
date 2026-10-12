@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: da2e92eaf8fc09245a0c5350748fd282
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/Pickups/Weapons/RiflePickupBase.prefab
+  uploadId: 970776

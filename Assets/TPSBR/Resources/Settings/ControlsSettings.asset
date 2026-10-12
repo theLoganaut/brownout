@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396439708a21ece46b26b518206907cb, type: 3}
+  m_Name: ControlsSettings
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.ControlsSettings
+  HipCentimetersPerTurn: 30
+  ReferenceDpi: 1000
+  ScaleAdsByZoom: 1
+  Bindings:
+  - Action: 0
+    Label: Move forward
+    Path: <Keyboard>/w
+  - Action: 1
+    Label: Move back
+    Path: <Keyboard>/s
+  - Action: 2
+    Label: Move left
+    Path: <Keyboard>/a
+  - Action: 3
+    Label: Move right
+    Path: <Keyboard>/d
+  - Action: 4
+    Label: Sprint / hold breath
+    Path: <Keyboard>/leftShift
+  - Action: 5
+    Label: Crouch / slide
+    Path: <Keyboard>/c
+  - Action: 6
+    Label: Jump / mantle
+    Path: <Keyboard>/space
+  - Action: 7
+    Label: Shoot
+    Path: <Mouse>/leftButton
+  - Action: 8
+    Label: Aim down sights
+    Path: <Mouse>/rightButton
+  - Action: 9
+    Label: Reload
+    Path: <Keyboard>/r
+  - Action: 10
+    Label: Primary gun
+    Path: <Keyboard>/1
+  - Action: 11
+    Label: Secondary gun
+    Path: <Keyboard>/2
+  - Action: 12
+    Label: Melee punch
+    Path: <Keyboard>/3
+  - Action: 13
+    Label: Interact (equip, revive)
+    Path: <Keyboard>/f
+  - Action: 14
+    Label: Pick up
+    Path: <Keyboard>/g
+  - Action: 15
+    Label: Heal
+    Path: <Keyboard>/q
+  - Action: 16
+    Label: Equipment
+    Path: <Keyboard>/e
+  - Action: 17
+    Label: Gear on / off
+    Path: <Keyboard>/leftCtrl
+  - Action: 18
+    Label: Inventory
+    Path: <Keyboard>/tab
+  - Action: 19
+    Label: Full map
+    Path: <Keyboard>/m
+  - Action: 20
+    Label: Ping
+    Path: <Mouse>/middleButton

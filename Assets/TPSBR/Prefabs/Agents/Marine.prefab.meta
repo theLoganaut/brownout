@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ae02aef1211f3264a935ca8d5f12b077
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/Agents/Marine.prefab
+  uploadId: 970776

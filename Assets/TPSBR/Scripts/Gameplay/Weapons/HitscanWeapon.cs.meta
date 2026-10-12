@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 2e55a2c49b5d44b4a9b0f9cf94b90df0
+timeCreated: 1628769423
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Scripts/Gameplay/Weapons/HitscanWeapon.cs
+  uploadId: 970776

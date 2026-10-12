@@ -1,0 +1,1656 @@
+{
+ "meta": {
+  "what": "Project Brownout: decided values for the 17 starting guns. Notion hub is the source of truth for rules; this file carries the per-gun numbers.",
+  "updated": "2026-10-11",
+  "notes": [
+   "Names are placeholders. based_on = the Blackout gun the measurements come from.",
+   "damage = body damage before armor. Armor reduces body damage 30/40/50% by tier; only tier 3 reduces head damage (30%).",
+   "fire_interval_ms for semi-auto guns is a lower bound (how fast the footage player fired).",
+   "ammo_in_s is when the mag counts as loaded; reload_s is the full animation. Estimated values are 55% of reload_s.",
+   "Bullets are projectiles with travel time and gravity drop (no hitscan). bullet_speed_mps_start values are our own starting guesses; no measured Blackout numbers exist.",
+   "Swap time = holster_s of the gun put away + draw_s of the gun brought up.",
+   "recoil_measured is the on-screen pattern from the Blackout footage (degrees assume an 80 degree horizontal hip FOV); see weapons_brownout.json meta for caveats.",
+   "Calibers match each gun's Blackout counterpart, except Savant (.45) and Splitter (9mm), which Logan swapped.",
+   "2026-10-03 (phase 0): damage brought in line with the Weapons & Gunplay page (Blackout launch values for Icarus/Knocker/Rampage/Maddog; other non-snipers cut 10%; snipers unchanged); Twofer fires its two shots 100 ms apart; Long Barrel speed multiplier 1.1 to start, like every attachment effect (Blackout's was about 1.35, the value to tune toward).",
+   "2026-10-04 (phase 3c): attachment effects moved into the attachments section (Attachments page: 10% each, Suppressor 35%); the Long Barrel's 1.1 bullet speed lives there now instead of ballistics. Effects are multipliers on the gun's own values. eye_distance_m is how far behind a sight's _ADS_Eye point the eye sits when aimed (Logan's 3c answer), tuned on the Gun Bench.",
+   "2026-10-10 (phase 11a): magnified optics zoom only inside the lens (Logan), so the 2x, 4x and the built-in scopes (built_in_scope.eye_distance_m) sit 0.03 m behind their _ADS_Eye to start, leaving the scope body and the world around it in view; tune by feel.",
+   "2026-10-11 (phase 11e): recoil_measured.ads_pattern_deg_first12 is read as where the view sat at each shot (an offset from the aim point), not as a kick per shot: the view springs toward the next shot's offset and settles back on release, so a spray sits around ads_up_mean_deg and peaks near ads_up_max_deg. New recoil_feel section: the kickback feel per gun class (render only, doesn't move where you aim); tune by feel."
+  ]
+ },
+ "recoil_feel": {
+  "notes": "Per shot the gun and arms slam back toward the camera (kickback_m) with a small pitch of the gun (gun_pitch_deg) and recover (recovery, higher = faster), and the view gets a small punch (punch_pitch_deg up, punch_roll_deg either way) that springs back without moving where you aim. Aimed in, the kickback is halved and the punch uses FeelSettings.FireKickAimed. Starting values from phase 10/11c's fixed kick, raised for kickback; tune by feel.",
+  "classes": {
+   "AR": {
+    "kickback_m": 0.045,
+    "gun_pitch_deg": 1.0,
+    "punch_pitch_deg": 0.35,
+    "punch_roll_deg": 0.25,
+    "recovery": 14
+   },
+   "SMG": {
+    "kickback_m": 0.035,
+    "gun_pitch_deg": 0.8,
+    "punch_pitch_deg": 0.25,
+    "punch_roll_deg": 0.2,
+    "recovery": 16
+   },
+   "Tactical": {
+    "kickback_m": 0.055,
+    "gun_pitch_deg": 1.2,
+    "punch_pitch_deg": 0.55,
+    "punch_roll_deg": 0.3,
+    "recovery": 12
+   },
+   "Sniper": {
+    "kickback_m": 0.09,
+    "gun_pitch_deg": 2.5,
+    "punch_pitch_deg": 1.3,
+    "punch_roll_deg": 0.6,
+    "recovery": 8
+   }
+  }
+ },
+ "ballistics": {
+  "gravity_mps2": 9.81,
+  "class_speed_mps_start": {
+   "SMG": 400,
+   "AR": 600,
+   "Tactical": 600,
+   "Sniper": 900
+  }
+ },
+ "swap_weights": {
+  "light": {
+   "holster_s": 0.2,
+   "draw_s": 0.3
+  },
+  "medium": {
+   "holster_s": 0.25,
+   "draw_s": 0.35
+  },
+  "heavy": {
+   "holster_s": 0.3,
+   "draw_s": 0.4
+  },
+  "sniper": {
+   "holster_s": 0.85,
+   "draw_s": 0.55
+  },
+  "heavy_sniper": {
+   "holster_s": 0.95,
+   "draw_s": 0.65
+  }
+ },
+ "ammo": {
+  "calibers": [
+   "5.56",
+   "7.62",
+   "9mm",
+   ".45",
+   ".50",
+   ".338"
+  ],
+  "carry_caps_proposed": {
+   "9mm": 200,
+   ".45": 200,
+   "5.56": 150,
+   "7.62": 150,
+   ".338": 50,
+   ".50": 50
+  }
+ },
+ "iron_sights": {
+  "eye_distance_m": 0.0,
+  "notes": "How far behind each gun's _ADS_Eye the eye sits when aimed with iron sights."
+ },
+ "attachments": [
+  {
+   "name": "Reflex",
+   "slot": "optic",
+   "model": "ATT_Reflex",
+   "zoom": null,
+   "magnified": false,
+   "eye_distance_m": 0.0,
+   "effects": {
+    "ads_time": 0.9
+   },
+   "notes": "Same zoom as the gun's irons; ADS time 10% shorter."
+  },
+  {
+   "name": "Holo",
+   "slot": "optic",
+   "model": "ATT_Holo",
+   "zoom": null,
+   "magnified": false,
+   "eye_distance_m": 0.0,
+   "effects": {
+    "aim_idle_motion": 0.9
+   },
+   "notes": "Same zoom as the gun's irons. Calms the viewmodel's aimed idle motion by 10% (cosmetic; Logan's 3c answer: unmagnified sights don't sway)."
+  },
+  {
+   "name": "2x",
+   "slot": "optic",
+   "model": "ATT_Scope2x",
+   "zoom": 2.0,
+   "magnified": true,
+   "eye_distance_m": 0.03,
+   "effects": {},
+   "notes": "The zoom is the benefit. Magnified: scope sway and hold breath apply."
+  },
+  {
+   "name": "4x",
+   "slot": "optic",
+   "model": "ATT_Scope4x",
+   "zoom": 4.0,
+   "magnified": true,
+   "eye_distance_m": 0.03,
+   "effects": {},
+   "notes": "The zoom is the benefit. Magnified: scope sway and hold breath apply."
+  },
+  {
+   "name": "Suppressor",
+   "slot": "muzzle",
+   "model": "ATT_Suppressor",
+   "effects": {
+    "gunshot_range": 0.65,
+    "hides_flash": true,
+    "suppressed": true,
+    "bullet_speed": 1.0
+   },
+   "notes": "Shots heard from 35% less far, no flash, hidden from Sixth Sense; bullet speed unchanged."
+  },
+  {
+   "name": "Long Barrel",
+   "slot": "muzzle",
+   "model": "ATT_LongBarrel",
+   "effects": {
+    "bullet_speed": 1.1,
+    "falloff_range": 1.1
+   },
+   "notes": "Blackout's barrel was about 1.35x speed, the value to tune toward."
+  },
+  {
+   "name": "Foregrip",
+   "slot": "underbarrel",
+   "model": "ATT_Foregrip",
+   "left_hand_pose": "Pose_LH_Vertical",
+   "effects": {
+    "recoil": 0.9
+   }
+  },
+  {
+   "name": "Laser Sight",
+   "slot": "underbarrel",
+   "model": "ATT_Laser",
+   "effects": {
+    "hip_spread": 0.9
+   }
+  },
+  {
+   "name": "Extended Mag",
+   "slot": "magazine",
+   "model": null,
+   "uses_gun_mag_ext": true,
+   "effects": {
+    "mag": 1.1
+   },
+   "notes": "Mag size rounded up. The model is each gun's own <Name>_MagExt."
+  },
+  {
+   "name": "Fast Mag",
+   "slot": "magazine",
+   "model": null,
+   "effects": {
+    "reload": 0.9
+   },
+   "notes": "Reload and ammo-in times together. No model yet."
+  },
+  {
+   "name": "Stock",
+   "slot": "stock",
+   "model": "ATT_Stock",
+   "effects": {
+    "aim_move_speed": 1.1
+   },
+   "notes": "2.5 m/s becomes 2.75 m/s while aiming."
+  },
+  {
+   "name": "Grip",
+   "slot": "grip",
+   "model": "ATT_Grip",
+   "effects": {
+    "ads_time": 0.9
+   },
+   "notes": "ADS time 10% shorter (Logan, 9 Oct). Upright ergonomic grip on <Name>_GripMount; hides the gun's <Name>_Grip. Built in on Maddog, Pivotal and Omicron."
+  }
+ ],
+ "guns": [
+  {
+   "name": "Icarus",
+   "based_on": "ICR-7",
+   "class": "AR",
+   "fire_mode": "auto",
+   "burst_count": 1,
+   "mag": 35,
+   "damage": 32,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 100,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 2.63,
+   "ammo_in_s": 1.18,
+   "ammo_in_estimated": false,
+   "ads_s": 0.27,
+   "ads_zoom_measured": 1.427,
+   "caliber": "5.56",
+   "bullet_speed_mps_start": 600,
+   "swap": {
+    "weight": "medium",
+    "holster_s": 0.25,
+    "draw_s": 0.35
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x",
+    "4x"
+   ],
+   "attachments_allowed": [
+    "Suppressor",
+    "Long Barrel",
+    "Foregrip",
+    "Laser Sight",
+    "Extended Mag",
+    "Fast Mag",
+    "Stock",
+    "Grip"
+   ],
+   "recoil_measured": {
+    "ads_up_mean_deg": 0.707,
+    "ads_up_max_deg": 1.369,
+    "ads_side_mean_deg": -0.303,
+    "ads_side_range_deg": 0.65,
+    "ads_settle_after_release_s": 0.033,
+    "ads_pattern_deg_first12": [
+     [
+      -0.001,
+      0.001
+     ],
+     [
+      -0.391,
+      0.196
+     ],
+     [
+      -0.304,
+      0.382
+     ],
+     [
+      -0.288,
+      1.132
+     ],
+     [
+      -0.611,
+      1.051
+     ],
+     [
+      -0.645,
+      0.932
+     ],
+     [
+      -0.541,
+      0.86
+     ],
+     [
+      -0.633,
+      1.072
+     ],
+     [
+      -0.432,
+      1.034
+     ],
+     [
+      -0.193,
+      1.369
+     ],
+     [
+      -0.017,
+      0.731
+     ],
+     [
+      0.004,
+      0.101
+     ]
+    ],
+    "zoom_used_for_conversion": 1.427,
+    "hip_climb_deg_per_shot": 0.129,
+    "hip_side_range_deg": 1.706
+   }
+  },
+  {
+   "name": "Knocker",
+   "based_on": "KN-57",
+   "class": "AR",
+   "fire_mode": "auto",
+   "burst_count": 1,
+   "mag": 35,
+   "damage": 37,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 108,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 2.92,
+   "ammo_in_s": 1.58,
+   "ammo_in_estimated": false,
+   "ads_s": 0.27,
+   "ads_zoom_measured": null,
+   "caliber": "7.62",
+   "bullet_speed_mps_start": 600,
+   "swap": {
+    "weight": "heavy",
+    "holster_s": 0.3,
+    "draw_s": 0.4
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x",
+    "4x"
+   ],
+   "attachments_allowed": [
+    "Suppressor",
+    "Foregrip",
+    "Extended Mag",
+    "Stock",
+    "Grip"
+   ],
+   "recoil_measured": {
+    "ads_up_mean_deg": 0.706,
+    "ads_up_max_deg": 1.368,
+    "ads_side_mean_deg": -0.427,
+    "ads_side_range_deg": 0.97,
+    "ads_settle_after_release_s": 0.05,
+    "ads_pattern_deg_first12": [
+     [
+      -0.009,
+      0.095
+     ],
+     [
+      -0.298,
+      0.236
+     ],
+     [
+      -0.21,
+      0.189
+     ],
+     [
+      -0.401,
+      0.527
+     ],
+     [
+      -0.402,
+      0.51
+     ],
+     [
+      -0.54,
+      0.702
+     ],
+     [
+      -0.511,
+      1.014
+     ],
+     [
+      -0.391,
+      0.655
+     ],
+     [
+      -0.56,
+      1.053
+     ],
+     [
+      -0.15,
+      0.376
+     ],
+     [
+      0.091,
+      0.323
+     ],
+     [
+      -0.035,
+      0.591
+     ]
+    ],
+    "zoom_used_for_conversion": 1.43,
+    "hip_climb_deg_per_shot": 0.118,
+    "hip_side_range_deg": 3.421
+   }
+  },
+  {
+   "name": "Rampage",
+   "based_on": "Rampart 17",
+   "class": "AR",
+   "fire_mode": "auto",
+   "burst_count": 1,
+   "mag": 30,
+   "damage": 37,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 116,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 3.23,
+   "ammo_in_s": 1.72,
+   "ammo_in_estimated": false,
+   "ads_s": 0.27,
+   "ads_zoom_measured": 1.514,
+   "caliber": "7.62",
+   "bullet_speed_mps_start": 600,
+   "swap": {
+    "weight": "heavy",
+    "holster_s": 0.3,
+    "draw_s": 0.4
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x",
+    "4x"
+   ],
+   "attachments_allowed": [
+    "Long Barrel",
+    "Foregrip",
+    "Extended Mag",
+    "Fast Mag",
+    "Grip"
+   ],
+   "recoil_measured": {
+    "ads_up_mean_deg": 1.05,
+    "ads_up_max_deg": 1.674,
+    "ads_side_mean_deg": 0.241,
+    "ads_side_range_deg": 1.148,
+    "ads_settle_after_release_s": 0.083,
+    "ads_pattern_deg_first12": [
+     [
+      -0.073,
+      0.293
+     ],
+     [
+      -0.118,
+      0.602
+     ],
+     [
+      -0.116,
+      0.585
+     ],
+     [
+      -0.275,
+      1.191
+     ],
+     [
+      0.124,
+      1.481
+     ],
+     [
+      0.596,
+      1.587
+     ],
+     [
+      0.873,
+      1.544
+     ],
+     [
+      0.62,
+      1.373
+     ],
+     [
+      0.453,
+      1.674
+     ],
+     [
+      0.5,
+      1.479
+     ],
+     [
+      -0.101,
+      0.192
+     ],
+     [
+      -0.064,
+      0.383
+     ]
+    ],
+    "zoom_used_for_conversion": 1.514,
+    "hip_climb_deg_per_shot": 0.076,
+    "hip_side_range_deg": 3.988
+   }
+  },
+  {
+   "name": "Maddog",
+   "based_on": "Maddox RFB",
+   "class": "AR",
+   "fire_mode": "auto",
+   "burst_count": 1,
+   "mag": 40,
+   "damage": 27,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 83,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 2.77,
+   "ammo_in_s": 1.77,
+   "ammo_in_estimated": false,
+   "ads_s": 0.27,
+   "ads_zoom_measured": null,
+   "caliber": "5.56",
+   "bullet_speed_mps_start": 600,
+   "swap": {
+    "weight": "medium",
+    "holster_s": 0.25,
+    "draw_s": 0.35
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x",
+    "4x"
+   ],
+   "attachments_allowed": [
+    "Suppressor",
+    "Long Barrel",
+    "Extended Mag",
+    "Fast Mag"
+   ],
+   "built_in_attachments": [
+    "Grip"
+   ],
+   "built_in_notes": "The model's grip is part of the body (Oct 9 models): the Grip attachment's effects always apply and the slot takes nothing.",
+   "recoil_measured": {
+    "ads_up_mean_deg": 0.983,
+    "ads_up_max_deg": 1.91,
+    "ads_side_mean_deg": -0.133,
+    "ads_side_range_deg": 1.234,
+    "ads_settle_after_release_s": 0.083,
+    "ads_pattern_deg_first12": [
+     [
+      -0.071,
+      0.003
+     ],
+     [
+      -0.123,
+      0.205
+     ],
+     [
+      -0.267,
+      0.319
+     ],
+     [
+      -0.407,
+      0.691
+     ],
+     [
+      -0.421,
+      1.175
+     ],
+     [
+      -0.087,
+      1.466
+     ],
+     [
+      0.304,
+      1.644
+     ],
+     [
+      0.382,
+      1.758
+     ],
+     [
+      0.013,
+      1.863
+     ],
+     [
+      -0.438,
+      1.91
+     ],
+     [
+      -0.03,
+      0.123
+     ],
+     [
+      0.0,
+      -0.006
+     ]
+    ],
+    "zoom_used_for_conversion": 1.43,
+    "hip_climb_deg_per_shot": 0.366,
+    "hip_side_range_deg": 4.226
+   }
+  },
+  {
+   "name": "Pacifier",
+   "based_on": "Peacekeeper",
+   "class": "AR",
+   "fire_mode": "auto",
+   "burst_count": 1,
+   "mag": 32,
+   "damage": 31,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 86,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 2.68,
+   "ammo_in_s": 1.47,
+   "ammo_in_estimated": true,
+   "ads_s": 0.2,
+   "ads_zoom_measured": null,
+   "caliber": "5.56",
+   "bullet_speed_mps_start": 600,
+   "swap": {
+    "weight": "medium",
+    "holster_s": 0.25,
+    "draw_s": 0.35
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x",
+    "4x"
+   ],
+   "attachments_allowed": [
+    "Suppressor",
+    "Long Barrel",
+    "Foregrip",
+    "Extended Mag",
+    "Stock",
+    "Grip"
+   ],
+   "recoil_measured": {
+    "ads_up_mean_deg": 0.388,
+    "ads_up_max_deg": 0.755,
+    "ads_side_mean_deg": 0.007,
+    "ads_side_range_deg": 0.395,
+    "ads_settle_after_release_s": 0.083,
+    "ads_pattern_deg_first12": [
+     [
+      -0.034,
+      0.097
+     ],
+     [
+      -0.054,
+      0.202
+     ],
+     [
+      -0.123,
+      0.52
+     ],
+     [
+      -0.137,
+      0.755
+     ],
+     [
+      0.161,
+      0.615
+     ],
+     [
+      0.205,
+      0.387
+     ],
+     [
+      0.092,
+      0.312
+     ],
+     [
+      0.058,
+      0.214
+     ],
+     [
+      -0.173,
+      0.103
+     ],
+     [
+      -0.081,
+      0.293
+     ],
+     [
+      -0.142,
+      0.48
+     ],
+     [
+      -0.19,
+      0.746
+     ]
+    ],
+    "zoom_used_for_conversion": 1.43,
+    "hip_climb_deg_per_shot": 0.06,
+    "hip_side_range_deg": 1.328
+   }
+  },
+  {
+   "name": "Splitter",
+   "based_on": "Spitfire",
+   "class": "SMG",
+   "fire_mode": "auto",
+   "burst_count": 1,
+   "mag": 34,
+   "damage": 24,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 58,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 2.33,
+   "ammo_in_s": 1.55,
+   "ammo_in_estimated": false,
+   "ads_s": 0.25,
+   "ads_zoom_measured": 1.262,
+   "caliber": "9mm",
+   "bullet_speed_mps_start": 400,
+   "swap": {
+    "weight": "light",
+    "holster_s": 0.2,
+    "draw_s": 0.3
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x"
+   ],
+   "attachments_allowed": [
+    "Laser Sight",
+    "Extended Mag",
+    "Fast Mag",
+    "Stock",
+    "Grip"
+   ],
+   "recoil_measured": {
+    "ads_up_mean_deg": 1.662,
+    "ads_up_max_deg": 3.116,
+    "ads_side_mean_deg": -0.316,
+    "ads_side_range_deg": 2.168,
+    "ads_settle_after_release_s": 0.2,
+    "ads_pattern_deg_first12": [
+     [
+      -0.019,
+      -0.002
+     ],
+     [
+      -0.223,
+      0.223
+     ],
+     [
+      -0.695,
+      0.671
+     ],
+     [
+      -1.119,
+      0.825
+     ],
+     [
+      -1.142,
+      1.506
+     ],
+     [
+      -0.9,
+      1.431
+     ],
+     [
+      0.068,
+      2.608
+     ],
+     [
+      0.195,
+      2.698
+     ],
+     [
+      -0.117,
+      0.311
+     ],
+     [
+      -0.339,
+      0.576
+     ],
+     [
+      -1.057,
+      0.998
+     ],
+     [
+      -1.335,
+      1.188
+     ]
+    ],
+    "zoom_used_for_conversion": 1.262,
+    "hip_climb_deg_per_shot": 0.035,
+    "hip_side_range_deg": 4.804
+   }
+  },
+  {
+   "name": "Grakken",
+   "based_on": "GKS",
+   "class": "SMG",
+   "fire_mode": "auto",
+   "burst_count": 1,
+   "mag": 38,
+   "damage": 25,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 92,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 2.42,
+   "ammo_in_s": 1.32,
+   "ammo_in_estimated": false,
+   "ads_s": 0.2,
+   "ads_zoom_measured": 1.26,
+   "caliber": ".45",
+   "bullet_speed_mps_start": 400,
+   "swap": {
+    "weight": "light",
+    "holster_s": 0.2,
+    "draw_s": 0.3
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x"
+   ],
+   "attachments_allowed": [
+    "Suppressor",
+    "Long Barrel",
+    "Foregrip",
+    "Extended Mag",
+    "Grip"
+   ],
+   "recoil_measured": {
+    "ads_up_mean_deg": 0.525,
+    "ads_up_max_deg": 0.962,
+    "ads_side_mean_deg": -0.117,
+    "ads_side_range_deg": 0.689,
+    "ads_settle_after_release_s": 0.033,
+    "ads_pattern_deg_first12": [
+     [
+      -0.024,
+      0.211
+     ],
+     [
+      -0.001,
+      0.236
+     ],
+     [
+      -0.035,
+      0.126
+     ],
+     [
+      -0.124,
+      0.316
+     ],
+     [
+      0.004,
+      0.236
+     ],
+     [
+      -0.217,
+      0.574
+     ],
+     [
+      -0.186,
+      0.331
+     ],
+     [
+      -0.205,
+      0.466
+     ],
+     [
+      -0.385,
+      0.708
+     ],
+     [
+      -0.148,
+      0.559
+     ],
+     [
+      -0.048,
+      0.689
+     ],
+     [
+      -0.196,
+      0.789
+     ]
+    ],
+    "zoom_used_for_conversion": 1.26,
+    "hip_climb_deg_per_shot": 0.108,
+    "hip_side_range_deg": 1.419
+   }
+  },
+  {
+   "name": "Savant",
+   "based_on": "Saug 9mm",
+   "class": "SMG",
+   "fire_mode": "auto",
+   "burst_count": 1,
+   "mag": 36,
+   "damage": 25,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 66,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 2.33,
+   "ammo_in_s": 1.32,
+   "ammo_in_estimated": false,
+   "ads_s": 0.22,
+   "ads_zoom_measured": null,
+   "caliber": ".45",
+   "bullet_speed_mps_start": 400,
+   "swap": {
+    "weight": "light",
+    "holster_s": 0.2,
+    "draw_s": 0.3
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x"
+   ],
+   "attachments_allowed": [
+    "Suppressor",
+    "Foregrip",
+    "Extended Mag",
+    "Fast Mag",
+    "Stock",
+    "Grip"
+   ],
+   "recoil_measured": {
+    "ads_up_mean_deg": 1.444,
+    "ads_up_max_deg": 2.846,
+    "ads_side_mean_deg": 0.722,
+    "ads_side_range_deg": 2.752,
+    "ads_settle_after_release_s": 0.05,
+    "ads_pattern_deg_first12": [
+     [
+      -0.219,
+      0.098
+     ],
+     [
+      -0.681,
+      0.346
+     ],
+     [
+      -0.477,
+      0.804
+     ],
+     [
+      0.242,
+      1.319
+     ],
+     [
+      0.738,
+      1.522
+     ],
+     [
+      1.266,
+      1.912
+     ],
+     [
+      1.881,
+      1.825
+     ],
+     [
+      1.594,
+      2.039
+     ],
+     [
+      1.622,
+      2.736
+     ],
+     [
+      2.01,
+      2.846
+     ],
+     [
+      1.759,
+      2.369
+     ],
+     [
+      -0.217,
+      0.116
+     ]
+    ],
+    "zoom_used_for_conversion": 1.26,
+    "hip_climb_deg_per_shot": 0.191,
+    "hip_side_range_deg": 5.072
+   }
+  },
+  {
+   "name": "Clinic",
+   "based_on": "Cordite",
+   "class": "SMG",
+   "fire_mode": "auto",
+   "burst_count": 1,
+   "mag": 60,
+   "damage": 25,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 75,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 2.73,
+   "ammo_in_s": 1.97,
+   "ammo_in_estimated": false,
+   "ads_s": 0.25,
+   "ads_zoom_measured": null,
+   "caliber": "9mm",
+   "bullet_speed_mps_start": 400,
+   "swap": {
+    "weight": "light",
+    "holster_s": 0.2,
+    "draw_s": 0.3
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x"
+   ],
+   "attachments_allowed": [
+    "Long Barrel",
+    "Foregrip",
+    "Laser Sight",
+    "Extended Mag",
+    "Grip"
+   ],
+   "built_in_attachments": [
+    "Stock"
+   ],
+   "built_in_notes": "The model's stock is part of the body (Oct 9 models): the Stock attachment's effects always apply and the slot takes nothing.",
+   "recoil_measured": {
+    "ads_up_mean_deg": 1.649,
+    "ads_up_max_deg": 3.419,
+    "ads_side_mean_deg": -0.747,
+    "ads_side_range_deg": 2.501,
+    "ads_settle_after_release_s": 0.233,
+    "ads_pattern_deg_first12": [
+     [
+      -0.489,
+      0.11
+     ],
+     [
+      -0.686,
+      0.355
+     ],
+     [
+      -1.195,
+      0.905
+     ],
+     [
+      -1.381,
+      1.092
+     ],
+     [
+      -1.684,
+      1.756
+     ],
+     [
+      -1.718,
+      1.725
+     ],
+     [
+      -1.003,
+      1.895
+     ],
+     [
+      -0.328,
+      2.364
+     ],
+     [
+      -0.128,
+      2.599
+     ],
+     [
+      0.081,
+      2.486
+     ],
+     [
+      0.432,
+      2.375
+     ],
+     [
+      0.229,
+      3.419
+     ]
+    ],
+    "zoom_used_for_conversion": 1.26,
+    "hip_climb_deg_per_shot": 0.138,
+    "hip_side_range_deg": 5.683
+   }
+  },
+  {
+   "name": "Alibi DMR",
+   "based_on": "Auger DMR",
+   "class": "Tactical",
+   "fire_mode": "semi",
+   "burst_count": 1,
+   "mag": 20,
+   "damage": 56,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 190,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": true,
+   "reload_s": 2.8,
+   "ammo_in_s": 1.72,
+   "ammo_in_estimated": false,
+   "ads_s": 0.27,
+   "ads_zoom_measured": null,
+   "caliber": "7.62",
+   "bullet_speed_mps_start": 600,
+   "swap": {
+    "weight": "heavy",
+    "holster_s": 0.3,
+    "draw_s": 0.4
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x",
+    "4x"
+   ],
+   "attachments_allowed": [
+    "Suppressor",
+    "Long Barrel",
+    "Laser Sight",
+    "Extended Mag",
+    "Fast Mag",
+    "Grip"
+   ],
+   "built_in_attachments": [
+    "Stock"
+   ],
+   "built_in_notes": "The model's stock is part of the body (Oct 9 models): the Stock attachment's effects always apply and the slot takes nothing.",
+   "recoil_measured": {
+    "ads_up_mean_deg": 0.012,
+    "ads_up_max_deg": 0.104,
+    "ads_side_mean_deg": -0.062,
+    "ads_side_range_deg": 0.46,
+    "ads_settle_after_release_s": 0.017,
+    "ads_pattern_deg_first12": [
+     [
+      -0.001,
+      -0.015
+     ],
+     [
+      -0.394,
+      -0.014
+     ],
+     [
+      0.005,
+      0.003
+     ],
+     [
+      -0.198,
+      0.104
+     ],
+     [
+      0.066,
+      -0.022
+     ],
+     [
+      0.022,
+      -0.011
+     ],
+     [
+      0.008,
+      -0.002
+     ],
+     [
+      -0.039,
+      0.02
+     ],
+     [
+      -0.027,
+      0.044
+     ]
+    ],
+    "zoom_used_for_conversion": 1.43
+   }
+  },
+  {
+   "name": "URA Standard",
+   "based_on": "ABR 223",
+   "class": "Tactical",
+   "fire_mode": "burst",
+   "burst_count": 3,
+   "mag": 36,
+   "damage": 34,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 82,
+   "burst_cycle_ms": 600,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 2.95,
+   "ammo_in_s": 1.67,
+   "ammo_in_estimated": false,
+   "ads_s": 0.27,
+   "ads_zoom_measured": null,
+   "caliber": "5.56",
+   "bullet_speed_mps_start": 600,
+   "swap": {
+    "weight": "medium",
+    "holster_s": 0.25,
+    "draw_s": 0.35
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x",
+    "4x"
+   ],
+   "attachments_allowed": [
+    "Suppressor",
+    "Laser Sight",
+    "Extended Mag",
+    "Stock",
+    "Grip"
+   ],
+   "recoil_measured": {
+    "ads_up_mean_deg": 0.145,
+    "ads_up_max_deg": 0.638,
+    "ads_side_mean_deg": 0.188,
+    "ads_side_range_deg": 3.452,
+    "ads_settle_after_release_s": 0.0,
+    "ads_pattern_deg_first12": [
+     [
+      -0.005,
+      -0.001
+     ],
+     [
+      -0.001,
+      0.048
+     ],
+     [
+      0.133,
+      0.491
+     ],
+     [
+      0.028,
+      0.177
+     ],
+     [
+      0.0,
+      -0.011
+     ],
+     [
+      0.244,
+      0.326
+     ],
+     [
+      0.406,
+      0.448
+     ],
+     [
+      3.364,
+      0.377
+     ],
+     [
+      0.087,
+      0.223
+     ],
+     [
+      0.21,
+      0.027
+     ],
+     [
+      0.002,
+      0.002
+     ],
+     [
+      -0.012,
+      0.03
+     ]
+    ],
+    "zoom_used_for_conversion": 1.43
+   }
+  },
+  {
+   "name": "Swivel",
+   "based_on": "Swordfish",
+   "class": "Tactical",
+   "fire_mode": "burst",
+   "burst_count": 4,
+   "mag": 36,
+   "damage": 31,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 70,
+   "burst_cycle_ms": 390,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 3.18,
+   "ammo_in_s": 1.92,
+   "ammo_in_estimated": false,
+   "ads_s": 0.27,
+   "ads_zoom_measured": null,
+   "caliber": "5.56",
+   "bullet_speed_mps_start": 600,
+   "swap": {
+    "weight": "medium",
+    "holster_s": 0.25,
+    "draw_s": 0.35
+   },
+   "default_sight": "built-in 2x scope",
+   "built_in_scope": {
+    "zoom": 2.0,
+    "magnified": true,
+    "eye_distance_m": 0.03,
+    "notes": "Part of the model (Oct 9 models, gun_attachments.json): no optic slot, no iron sights; aims from the gun's _ADS_Eye."
+   },
+   "optics_allowed": [],
+   "attachments_allowed": [
+    "Suppressor",
+    "Long Barrel",
+    "Extended Mag",
+    "Grip"
+   ],
+   "built_in_attachments": [
+    "Stock"
+   ],
+   "built_in_notes": "The model's stock is part of the body (Oct 9 models): the Stock attachment's effects always apply and the slot takes nothing.",
+   "recoil_measured": {
+    "ads_up_mean_deg": 0.08,
+    "ads_up_max_deg": 0.223,
+    "ads_side_mean_deg": 0.008,
+    "ads_side_range_deg": 0.397,
+    "ads_settle_after_release_s": 0.0,
+    "ads_pattern_deg_first12": [
+     [
+      0.005,
+      0.0
+     ],
+     [
+      -0.077,
+      0.113
+     ],
+     [
+      0.102,
+      0.119
+     ],
+     [
+      -0.003,
+      -0.006
+     ],
+     [
+      0.004,
+      -0.005
+     ],
+     [
+      -0.081,
+      0.124
+     ],
+     [
+      0.081,
+      0.101
+     ],
+     [
+      -0.013,
+      -0.015
+     ],
+     [
+      -0.003,
+      -0.015
+     ],
+     [
+      0.021,
+      0.079
+     ],
+     [
+      0.17,
+      0.194
+     ],
+     [
+      -0.07,
+      0.09
+     ]
+    ],
+    "zoom_used_for_conversion": 1.43
+   }
+  },
+  {
+   "name": "Twofer",
+   "based_on": "S6 Stingray",
+   "class": "Tactical",
+   "fire_mode": "burst",
+   "burst_count": 2,
+   "mag": 26,
+   "damage": 33,
+   "headshot_multiplier": 1.1,
+   "fire_interval_ms": 100,
+   "burst_cycle_ms": 272,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 2.95,
+   "ammo_in_s": 1.62,
+   "ammo_in_estimated": true,
+   "ads_s": 0.2,
+   "ads_zoom_measured": null,
+   "caliber": "7.62",
+   "bullet_speed_mps_start": 600,
+   "swap": {
+    "weight": "heavy",
+    "holster_s": 0.3,
+    "draw_s": 0.4
+   },
+   "default_sight": "built-in 3x scope",
+   "built_in_scope": {
+    "zoom": 3.0,
+    "magnified": true,
+    "eye_distance_m": 0.03,
+    "notes": "Part of the model (Oct 9 models, gun_attachments.json): no optic slot, no iron sights; aims from the gun's _ADS_Eye."
+   },
+   "optics_allowed": [],
+   "attachments_allowed": [
+    "Long Barrel",
+    "Foregrip",
+    "Extended Mag",
+    "Stock",
+    "Grip"
+   ],
+   "recoil_measured": {
+    "ads_up_mean_deg": 0.289,
+    "ads_up_max_deg": 0.616,
+    "ads_side_mean_deg": -0.163,
+    "ads_side_range_deg": 0.23,
+    "ads_settle_after_release_s": 0.233,
+    "ads_pattern_deg_first12": [
+     [
+      -0.185,
+      0.18
+     ],
+     [
+      -0.089,
+      0.287
+     ],
+     [
+      -0.183,
+      0.189
+     ],
+     [
+      -0.154,
+      0.616
+     ],
+     [
+      -0.069,
+      0.168
+     ],
+     [
+      -0.299,
+      0.297
+     ]
+    ],
+    "zoom_used_for_conversion": 1.43
+   }
+  },
+  {
+   "name": "Pivotal",
+   "based_on": "Paladin HB50",
+   "class": "Sniper",
+   "fire_mode": "bolt",
+   "burst_count": 1,
+   "mag": 5,
+   "damage": 100,
+   "headshot_multiplier": 1.5,
+   "fire_interval_ms": 980,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 4.3,
+   "ammo_in_s": 2.07,
+   "ammo_in_estimated": false,
+   "ads_s": 0.4,
+   "ads_zoom_measured": null,
+   "caliber": ".50",
+   "bullet_speed_mps_start": 900,
+   "swap": {
+    "weight": "heavy_sniper",
+    "holster_s": 0.95,
+    "draw_s": 0.65
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x",
+    "4x"
+   ],
+   "attachments_allowed": [
+    "Long Barrel",
+    "Extended Mag"
+   ],
+   "built_in_attachments": [
+    "Grip"
+   ],
+   "built_in_notes": "The model's grip is part of the body (Oct 9 models): the Grip attachment's effects always apply and the slot takes nothing.",
+   "recoil_measured": null
+  },
+  {
+   "name": "Omicron",
+   "based_on": "Outlaw",
+   "class": "Sniper",
+   "fire_mode": "bolt",
+   "burst_count": 1,
+   "mag": 9,
+   "damage": 80,
+   "headshot_multiplier": 1.5,
+   "fire_interval_ms": 680,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 4.17,
+   "ammo_in_s": 1.77,
+   "ammo_in_estimated": false,
+   "ads_s": 0.4,
+   "ads_zoom_measured": null,
+   "caliber": ".338",
+   "bullet_speed_mps_start": 900,
+   "swap": {
+    "weight": "sniper",
+    "holster_s": 0.85,
+    "draw_s": 0.55
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x",
+    "4x"
+   ],
+   "attachments_allowed": [
+    "Extended Mag",
+    "Stock"
+   ],
+   "built_in_attachments": [
+    "Grip"
+   ],
+   "built_in_notes": "The model's grip is part of the body (Oct 9 models): the Grip attachment's effects always apply and the slot takes nothing.",
+   "recoil_measured": null
+  },
+  {
+   "name": "Violet",
+   "based_on": "Vendetta",
+   "class": "Sniper",
+   "fire_mode": "semi",
+   "burst_count": 1,
+   "mag": 20,
+   "damage": 60,
+   "headshot_multiplier": 1.5,
+   "fire_interval_ms": 170,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": true,
+   "reload_s": 3.17,
+   "ammo_in_s": 1.74,
+   "ammo_in_estimated": true,
+   "ads_s": 0.4,
+   "ads_zoom_measured": null,
+   "caliber": "5.56",
+   "bullet_speed_mps_start": 900,
+   "swap": {
+    "weight": "sniper",
+    "holster_s": 0.85,
+    "draw_s": 0.55
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x",
+    "4x"
+   ],
+   "attachments_allowed": [
+    "Suppressor",
+    "Extended Mag",
+    "Stock",
+    "Grip"
+   ],
+   "built_in_attachments": [
+    "Foregrip"
+   ],
+   "built_in_notes": "The model's foregrip is part of the body (Oct 9 models): the Foregrip attachment's effects always apply and the slot takes nothing.",
+   "recoil_measured": null
+  },
+  {
+   "name": "Killnov",
+   "based_on": "Koshka",
+   "class": "Sniper",
+   "fire_mode": "bolt",
+   "burst_count": 1,
+   "mag": 8,
+   "damage": 100,
+   "headshot_multiplier": 1.5,
+   "fire_interval_ms": 1220,
+   "burst_cycle_ms": null,
+   "fire_interval_is_lower_bound": false,
+   "reload_s": 4.0,
+   "ammo_in_s": 2.02,
+   "ammo_in_estimated": false,
+   "ads_s": 0.35,
+   "ads_zoom_measured": null,
+   "caliber": ".338",
+   "bullet_speed_mps_start": 900,
+   "swap": {
+    "weight": "sniper",
+    "holster_s": 0.85,
+    "draw_s": 0.55
+   },
+   "default_sight": "iron sights",
+   "optics_allowed": [
+    "Reflex",
+    "Holo",
+    "2x",
+    "4x"
+   ],
+   "attachments_allowed": [
+    "Foregrip",
+    "Laser Sight",
+    "Extended Mag",
+    "Fast Mag",
+    "Grip"
+   ],
+   "recoil_measured": null
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 8794004da1ea41ea949840991219921e
+timeCreated: 1714748237
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/FusionAddons/KCC/Processors/TerrainTreeProcessor.cs
+  uploadId: 970776

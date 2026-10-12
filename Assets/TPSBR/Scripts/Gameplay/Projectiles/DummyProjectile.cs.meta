@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: b5fdf8757a55462ba8597bb3397c4c1f
+timeCreated: 1628771537
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Scripts/Gameplay/Projectiles/DummyProjectile.cs
+  uploadId: 970776

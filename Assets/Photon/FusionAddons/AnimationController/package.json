@@ -1,0 +1,21 @@
+{
+  "name": "com.photonengine.fusion-animation-controller",
+  "version": "2.1.0",
+  "displayName": "Fusion Animation Controller",
+  "description": "Fusion Animation Controller is a Photon Fusion addon that provides accurate networked animations. It replaces Unity's Animator state machine with a code-driven hierarchy of layers and states, giving full control over playback, blending and transitions, with support for prediction and interpolation on proxies.",
+  "documentationUrl": "https://doc.photonengine.com/fusion/current/addons/animation-controller",
+  "licensesUrl": "https://www.photonengine.com/terms",
+  "keywords": [
+    "Photon",
+    "Fusion",
+    "Network",
+    "Multiplayer",
+    "Animation",
+    "Addon"
+  ],
+  "author": {
+    "name": "Photon Engine",
+    "email": "hello@photonengine.com",
+    "url": "https://www.photonengine.com/"
+  }
+}

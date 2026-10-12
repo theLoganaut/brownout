@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f433f4b4ae8a70a4e9a3ccec3228dc17
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Materials/SmokeGrenadeHitPosition.mat
+  uploadId: 970776

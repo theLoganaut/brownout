@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5514fe15a830b4347ba4e5a1817f75e2, type: 3}
+  m_Name: MovementSettings
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.MovementSettings
+  WalkSpeed: 6
+  CrouchMultiplier: 0.75
+  AimSpeed: 2.5
+  AimMoveAnimationSpeed: 2
+  FallAnimationHeight: 6
+  SprintMultiplier: 1.5
+  OverspeedDeceleration: 8
+  SprintOutTime: 0.1
+  SlideEntrySpeedFraction: 0.95
+  DashSprintMultiplier: 1.2
+  DashDuration: 1
+  DashCooldown: 4
+  DashDoubleTapWindow: 0.3
+  DashTurnRateMultiplier: 0.5
+  SlideRampTime: 0.75
+  SlideFirstDecayTime: 0.75
+  SlideDecayGrowth: 1.2
+  SlidePeakMultipliers:
+  - 1.2
+  - 1.4
+  - 1.6
+  ChainBreakSlope: 10
+  ChainBreakTime: 0.1
+  SlideDownhillAcceleration: 9.81
+  SlideSteerRate: 30
+  JumpHeight: 2.4
+  MantleMaxHeight: 4
+  MantleMinHeight: 0.5
+  MantleTolerance: 0.05
+  MantleReach: 0.45
+  MantleBaseTime: 0.3
+  MantleTimePerMeter: 0.25
+  MantleMaxTime: 0.8
+  CapsuleRadius: 0.3
+  StandHeight: 2
+  StandEyeHeight: 1.8
+  CrouchHeight: 1.57
+  CrouchEyeHeight: 1.36
+  SlideHeight: 1.43
+  SlideEyeHeight: 1.2
+  DownedHeight: 0.87
+  DownedEyeHeight: 0.53
+  EyeHeightChangeTime: 0.15
+  FallDamageMinVelocity: 20
+  FallDamageMaxVelocity: 90
+  FallDamageMax: 150
+  FallDamageMinimum: 5

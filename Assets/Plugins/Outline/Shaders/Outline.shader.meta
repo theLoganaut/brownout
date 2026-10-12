@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: da6518c999b52e743bff80732b460ff4
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Plugins/Outline/Shaders/Outline.shader
+  uploadId: 970776

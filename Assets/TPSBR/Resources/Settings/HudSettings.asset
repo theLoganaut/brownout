@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0c8348de253054a91d034c12a3c249, type: 3}
+  m_Name: HudSettings
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.HudSettings
+  Boxes:
+  - Id: 1
+    Element: Minimap (rotating, square)
+    X0: 0.0432
+    Y0: 0.0611
+    X1: 0.1833
+    Y1: 0.3148
+  - Id: 2
+    Element: Zone timer (circle icon + mm:ss)
+    X0: 0.0391
+    Y0: 0.3352
+    X1: 0.1172
+    Y1: 0.3722
+  - Id: 3
+    Element: Compass strip + heading box
+    X0: 0.3125
+    Y0: 0.0463
+    X1: 0.6573
+    Y1: 0.1111
+  - Id: 4
+    Element: Players alive | kills | spectators
+    X0: 0.8578
+    Y0: 0.0574
+    X1: 0.9323
+    Y1: 0.0926
+  - Id: 5
+    Element: Kill feed (newest on top)
+    X0: 0.7812
+    Y0: 0.0972
+    X1: 0.9323
+    Y1: 0.1296
+  - Id: 6
+    Element: 'Squad list: number, name, mic, ping, health bars'
+    X0: 0.0563
+    Y0: 0.6713
+    X1: 0.1667
+    Y1: 0.75
+  - Id: 7
+    Element: Portrait + health number
+    X0: 0.0406
+    Y0: 0.85
+    X1: 0.1198
+    Y1: 0.9167
+  - Id: 8
+    Element: Health item + count (X to use)
+    X0: 0.1208
+    Y0: 0.813
+    X1: 0.1573
+    Y1: 0.9167
+  - Id: 9
+    Element: Armor (Gear) icon
+    X0: 0.1583
+    Y0: 0.85
+    X1: 0.1917
+    Y1: 0.9167
+  - Id: 10
+    Element: Empty quick slot
+    X0: 0.7161
+    Y0: 0.8472
+    X1: 0.75
+    Y1: 0.9028
+  - Id: 11
+    Element: Equipment slot + count (E to use)
+    X0: 0.75
+    Y0: 0.8083
+    X1: 0.7839
+    Y1: 0.9074
+  - Id: 12
+    Element: Mag ammo / reserve ammo
+    X0: 0.7839
+    Y0: 0.85
+    X1: 0.8135
+    Y1: 0.9028
+  - Id: 13
+    Element: Ammo type + reserve-mag pips
+    X0: 0.8151
+    Y0: 0.8565
+    X1: 0.8802
+    Y1: 0.9028
+  - Id: 14
+    Element: Weapon silhouette + name
+    X0: 0.8802
+    Y0: 0.8565
+    X1: 0.9323
+    Y1: 0.912
+  ProgressBar: {x: 0.36, y: 0.705, z: 0.61, w: 0.715}
+  ReferenceHeight: 1080
+  Font: {fileID: 11400000, guid: 5a82c74986f393743ab04994fff7364a, type: 2}
+  FontBold: {fileID: 11400000, guid: 6d2da5b98b2008043abecdbd9dd9208f, type: 2}
+  LabelSpacing: 12
+  PanelEdge: {r: 1, g: 1, b: 1, a: 0.14}
+  FontScale: 1.12
+  Text: {r: 0.95, g: 0.95, b: 0.95, a: 1}
+  Dim: {r: 0.95, g: 0.95, b: 0.95, a: 0.35}
+  Panel: {r: 0, g: 0, b: 0, a: 0.35}
+  WidgetBack: {r: 0.03, g: 0.03, b: 0.035, a: 0.78}
+  Team: {r: 1, g: 0.85, b: 0.25, a: 1}
+  Enemy: {r: 0.95, g: 0.25, b: 0.2, a: 1}
+  HealthColor: {r: 0.95, g: 0.95, b: 0.95, a: 1}
+  ArmorTail: {r: 1, g: 0.8, b: 0.2, a: 1}
+  BleedOut: {r: 0.9, g: 0.15, b: 0.1, a: 1}
+  Ping: {r: 0.3, g: 0.65, b: 1, a: 1}
+  Gear: {r: 0.4, g: 0.9, b: 0.5, a: 1}
+  HitMarkerSize: 45
+  HitMarkerTime: 0.15
+  BannerTime: 1.65
+  CrosshairGap: 8
+  CrosshairPerDegree: 6
+  CrosshairLine: 10
+  LowHealthEdge: 0.5
+  MinimapMeters: 150
+  CompassDegrees: 180
+  KillFeedTime: 6
+  KillFeedRows: 5
+  PingRange: 500
+  PingTime: 20
+  PingRemoveAngle: 3
+  StashColumns: 8
+  StashRows: 3
+  SlotBack: {r: 0.025, g: 0.028, b: 0.032, a: 0.86}
+  SlotDim: {r: 0.02, g: 0.02, b: 0.02, a: 0.3}
+  Hover: {r: 1, g: 0.85, b: 0.25, a: 1}
+  InventoryShade: 0.65
+  SlotFrame: {r: 0.85, g: 0.85, b: 0.82, a: 0.55}
+  Chip: {r: 0.78, g: 0.78, b: 0.75, a: 0.9}
+  MapGrid: 8
+  MapScreenShare: 0.86
+  MapMaxZoom: 4
+  WaypointRemovePixels: 18
+  Waypoint: {r: 0.25, g: 0.95, b: 0.55, a: 1}
+  ZoneCurrent: {r: 1, g: 1, b: 1, a: 0.9}
+  ZoneNext: {r: 0.3, g: 0.65, b: 1, a: 0.9}
+  LoadingTips:
+  - 'Armor only stops bullets. Tier 3 also covers your head.'
+  - 'Slide out of a sprint and skip to chain your speed. Steep slopes break the chain.'
+  - 'Hold breath on a scope to steady it.'
+  - 'A downed teammate bleeds out: revive them with F.'
+  - 'Drag items in the inventory: onto the gun to attach, out of the panel to drop.'
+  - 'Jump out early to land first, or ride to the end of the path for a quiet drop.'
+  - 'Gear runs for 10 seconds. Toggle it with Left Ctrl.'
+  - 'The zone hurts more each step. Watch the timer under the minimap.'
+  LoadingTipTime: 6
+  VictoryTime: 8

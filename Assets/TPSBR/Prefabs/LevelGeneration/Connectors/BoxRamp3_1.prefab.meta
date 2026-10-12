@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e3fd2512f52d9ab4fa037b964f645894
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/LevelGeneration/Connectors/BoxRamp3_1.prefab
+  uploadId: 970776

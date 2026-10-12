@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 742d67ca01e98634692676d64a450e70
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Animations/Agents/MenuAgentController.controller
+  uploadId: 970776

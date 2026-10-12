@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f37fee8a72a3e7c4283f04c9f67429aa
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/Game/StandaloneManager.prefab
+  uploadId: 970776

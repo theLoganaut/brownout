@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a5f87041c3649794dbff69ef42db0dd6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/FusionAddons/AnimationController/Editor/AnimationLayerEditor.cs
+  uploadId: 970776

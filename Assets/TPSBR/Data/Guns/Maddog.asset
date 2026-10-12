@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Maddog
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Maddog
+  BasedOn: Maddox RFB
+  Class: 0
+  FireMode: 0
+  BurstCount: 1
+  Magazine: 40
+  Damage: 27
+  HeadMultiplier: 1.1
+  FireInterval: 0.083
+  BurstCycle: 0
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 2.77
+  AmmoInTime: 1.77
+  AmmoInEstimated: 0
+  AdsTime: 0.27
+  AdsZoom: 0
+  Caliber: 2
+  BulletSpeed: 600
+  SwapWeight: 1
+  HolsterTime: 0.25
+  DrawTime: 0.35
+  AdsRecoilSteps:
+  - {x: -0.071, y: 0.003}
+  - {x: -0.123, y: 0.205}
+  - {x: -0.267, y: 0.319}
+  - {x: -0.407, y: 0.691}
+  - {x: -0.421, y: 1.175}
+  - {x: -0.087, y: 1.466}
+  - {x: 0.304, y: 1.644}
+  - {x: 0.382, y: 1.758}
+  - {x: 0.013, y: 1.863}
+  - {x: -0.438, y: 1.91}
+  - {x: -0.03, y: 0.123}
+  - {x: 0, y: -0.006}
+  AdsUpMean: 0.983
+  AdsUpMax: 1.91
+  AdsSideMean: -0.133
+  AdsSideRange: 1.234
+  AdsSettleTime: 0.083
+  HipClimbPerShot: 0.366
+  HipSideRange: 4.226
+  KickBack: 0.045
+  KickPitch: 1
+  PunchPitch: 0.35
+  PunchRoll: 0.25
+  KickRecovery: 14
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  - 4x
+  AttachmentsAllowed:
+  - Suppressor
+  - Long Barrel
+  - Extended Mag
+  - Fast Mag
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments:
+  - {fileID: 11400000, guid: 11777b8d02b5b6340b0908ca63fd29bc, type: 2}
+  Model: {fileID: 919132149155446097, guid: 2bd7001d60bf0a84a9579f9ca326881e, type: 3}

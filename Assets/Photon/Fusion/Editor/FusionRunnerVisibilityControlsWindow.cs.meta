@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b0b9919e3f6641c4dbd365521e52c809
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/Fusion/Editor/FusionRunnerVisibilityControlsWindow.cs
+  uploadId: 970776

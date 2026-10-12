@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e0ed02779b1465642995e6430072c587
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/UI/Prefabs/Core/PopupFrame.prefab
+  uploadId: 970776

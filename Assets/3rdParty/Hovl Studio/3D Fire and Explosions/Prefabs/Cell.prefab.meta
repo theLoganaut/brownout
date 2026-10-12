@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 10a5f200f6fd0174b95257d59ed06352
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/Hovl Studio/3D Fire and Explosions/Prefabs/Cell.prefab
+  uploadId: 970776

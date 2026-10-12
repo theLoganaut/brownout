@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 227fb785f3e666741828b6a0eb82eb10
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/Rifle_27A2_Pro/Animation/W2_Walk_Aim_B_Jump_LU_Start_IPC.anim
+  uploadId: 970776

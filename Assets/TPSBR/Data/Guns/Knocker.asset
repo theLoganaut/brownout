@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Knocker
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Knocker
+  BasedOn: KN-57
+  Class: 0
+  FireMode: 0
+  BurstCount: 1
+  Magazine: 35
+  Damage: 37
+  HeadMultiplier: 1.1
+  FireInterval: 0.108
+  BurstCycle: 0
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 2.92
+  AmmoInTime: 1.58
+  AmmoInEstimated: 0
+  AdsTime: 0.27
+  AdsZoom: 0
+  Caliber: 3
+  BulletSpeed: 600
+  SwapWeight: 2
+  HolsterTime: 0.3
+  DrawTime: 0.4
+  AdsRecoilSteps:
+  - {x: -0.009, y: 0.095}
+  - {x: -0.298, y: 0.236}
+  - {x: -0.21, y: 0.189}
+  - {x: -0.401, y: 0.527}
+  - {x: -0.402, y: 0.51}
+  - {x: -0.54, y: 0.702}
+  - {x: -0.511, y: 1.014}
+  - {x: -0.391, y: 0.655}
+  - {x: -0.56, y: 1.053}
+  - {x: -0.15, y: 0.376}
+  - {x: 0.091, y: 0.323}
+  - {x: -0.035, y: 0.591}
+  AdsUpMean: 0.706
+  AdsUpMax: 1.368
+  AdsSideMean: -0.427
+  AdsSideRange: 0.97
+  AdsSettleTime: 0.05
+  HipClimbPerShot: 0.118
+  HipSideRange: 3.421
+  KickBack: 0.045
+  KickPitch: 1
+  PunchPitch: 0.35
+  PunchRoll: 0.25
+  KickRecovery: 14
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  - 4x
+  AttachmentsAllowed:
+  - Suppressor
+  - Foregrip
+  - Extended Mag
+  - Stock
+  - Grip
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments: []
+  Model: {fileID: 919132149155446097, guid: 7822dea051989a847a1a04e99abbe8ca, type: 3}

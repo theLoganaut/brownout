@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2535781479f893d40abcaa4c4fc5ab58
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/Weapons/PistolBase.prefab
+  uploadId: 970776

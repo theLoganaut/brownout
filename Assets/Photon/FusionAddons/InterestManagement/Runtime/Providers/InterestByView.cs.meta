@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 5179977b2b2644c0bb39fa90bdc2e000
+timeCreated: 1697008495
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/FusionAddons/InterestManagement/Runtime/Providers/InterestByView.cs
+  uploadId: 970776

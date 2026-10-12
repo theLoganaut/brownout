@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6c177802771e7aa4c83ed141107a4f78
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Resources/Settings/URP/Renderer_04_Ultra.asset
+  uploadId: 970776

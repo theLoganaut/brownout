@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5fe66330c489e4544ba809ba6cc86e2b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 24100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Audio/AudioMixer.mixer
+  uploadId: 970776

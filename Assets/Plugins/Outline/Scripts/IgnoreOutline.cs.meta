@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2befa8c70a95e1e4d915bca0fa3a1389
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Plugins/Outline/Scripts/IgnoreOutline.cs
+  uploadId: 970776

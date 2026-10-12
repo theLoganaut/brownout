@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: URAStandard
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: URA Standard
+  BasedOn: ABR 223
+  Class: 2
+  FireMode: 2
+  BurstCount: 3
+  Magazine: 36
+  Damage: 34
+  HeadMultiplier: 1.1
+  FireInterval: 0.082
+  BurstCycle: 0.6
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 2.95
+  AmmoInTime: 1.67
+  AmmoInEstimated: 0
+  AdsTime: 0.27
+  AdsZoom: 0
+  Caliber: 2
+  BulletSpeed: 600
+  SwapWeight: 1
+  HolsterTime: 0.25
+  DrawTime: 0.35
+  AdsRecoilSteps:
+  - {x: -0.005, y: -0.001}
+  - {x: -0.001, y: 0.048}
+  - {x: 0.133, y: 0.491}
+  - {x: 0.028, y: 0.177}
+  - {x: 0, y: -0.011}
+  - {x: 0.244, y: 0.326}
+  - {x: 0.406, y: 0.448}
+  - {x: 3.364, y: 0.377}
+  - {x: 0.087, y: 0.223}
+  - {x: 0.21, y: 0.027}
+  - {x: 0.002, y: 0.002}
+  - {x: -0.012, y: 0.03}
+  AdsUpMean: 0.145
+  AdsUpMax: 0.638
+  AdsSideMean: 0.188
+  AdsSideRange: 3.452
+  AdsSettleTime: 0
+  HipClimbPerShot: 0
+  HipSideRange: 0
+  KickBack: 0.055
+  KickPitch: 1.2
+  PunchPitch: 0.55
+  PunchRoll: 0.3
+  KickRecovery: 12
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  - 4x
+  AttachmentsAllowed:
+  - Suppressor
+  - Laser Sight
+  - Extended Mag
+  - Stock
+  - Grip
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments: []
+  Model: {fileID: 919132149155446097, guid: f0c38cabb3cb05548b4add920f833210, type: 3}

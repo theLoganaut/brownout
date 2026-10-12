@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2687a30d68920d9418667b64d76a5fab
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/Hovl Studio/3D Fire and Explosions/Materials/Stone3bcg.mat
+  uploadId: 970776

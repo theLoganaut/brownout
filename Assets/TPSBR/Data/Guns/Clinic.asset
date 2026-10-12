@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Clinic
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Clinic
+  BasedOn: Cordite
+  Class: 1
+  FireMode: 0
+  BurstCount: 1
+  Magazine: 60
+  Damage: 25
+  HeadMultiplier: 1.1
+  FireInterval: 0.075
+  BurstCycle: 0
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 2.73
+  AmmoInTime: 1.97
+  AmmoInEstimated: 0
+  AdsTime: 0.25
+  AdsZoom: 0
+  Caliber: 0
+  BulletSpeed: 400
+  SwapWeight: 0
+  HolsterTime: 0.2
+  DrawTime: 0.3
+  AdsRecoilSteps:
+  - {x: -0.489, y: 0.11}
+  - {x: -0.686, y: 0.355}
+  - {x: -1.195, y: 0.905}
+  - {x: -1.381, y: 1.092}
+  - {x: -1.684, y: 1.756}
+  - {x: -1.718, y: 1.725}
+  - {x: -1.003, y: 1.895}
+  - {x: -0.328, y: 2.364}
+  - {x: -0.128, y: 2.599}
+  - {x: 0.081, y: 2.486}
+  - {x: 0.432, y: 2.375}
+  - {x: 0.229, y: 3.419}
+  AdsUpMean: 1.649
+  AdsUpMax: 3.419
+  AdsSideMean: -0.747
+  AdsSideRange: 2.501
+  AdsSettleTime: 0.233
+  HipClimbPerShot: 0.138
+  HipSideRange: 5.683
+  KickBack: 0.035
+  KickPitch: 0.8
+  PunchPitch: 0.25
+  PunchRoll: 0.2
+  KickRecovery: 16
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  AttachmentsAllowed:
+  - Long Barrel
+  - Foregrip
+  - Laser Sight
+  - Extended Mag
+  - Grip
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments:
+  - {fileID: 11400000, guid: 5dfcea6244c6e294489b088e7500545b, type: 2}
+  Model: {fileID: 919132149155446097, guid: eaa01d3fdbd1f1447a86ff79d33a049b, type: 3}

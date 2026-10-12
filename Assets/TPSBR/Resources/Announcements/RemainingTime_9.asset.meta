@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3f0752c0b511dde45b08193d06b03120
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Resources/Announcements/RemainingTime_9.asset
+  uploadId: 970776

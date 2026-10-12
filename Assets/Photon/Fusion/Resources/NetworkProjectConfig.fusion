@@ -1,0 +1,103 @@
+{
+    "Version": 1,
+    "TypeId": "NetworkProjectConfig",
+    "HubMode": 2,
+    "PeerMode": 1,
+    "LagCompensation": {
+        "Enabled": true,
+        "HitboxBufferLengthInMs": 300,
+        "HitboxDefaultCapacity": 4096,
+        "CachedStaticCollidersSize": 64
+    },
+    "PhysicsForecast": false,
+    "EnqueueIncompleteSynchronousSpawns": false,
+    "InvokeRenderMode": 3,
+    "NetworkIdIsObjectName": false,
+    "HideNetworkObjectInactivityGuard": false,
+    "AllowClientServerModesInWebGL": false,
+    "AllowMasterClientReassignRequest": false,
+    "MasterClientRequestReassignThreshold": 2.0,
+    "ClientsRecordFrameAndPacketTimingTraces": false,
+    "Simulation": {
+        "InputDataWordCount": 0,
+        "ReplicationFeatures": 2,
+        "InterestManagementConfig": {
+            "AreaOfInterestCellSize": 24,
+            "AreaOfInterestCellGridSize": {
+                "x": 1024,
+                "y": 1024,
+                "z": 1024
+            }
+        },
+        "InputTransferMode": 2,
+        "SimulationUpdateTimeMode": 0,
+        "PlayerCount": 200,
+        "TickRateSelection": {
+            "Client": 60,
+            "ClientSendInterval": 1,
+            "ServerTickInterval": 1,
+            "ServerSendInterval": 1,
+            "ClientSendIndex": 1,
+            "ServerIndex": 1,
+            "ServerSendIndex": 1
+        }
+    },
+    "TimeSync": {
+        "StateReceiveBufferSettings": 0,
+        "MaxLateSnapshots": 5.0,
+        "RedundantSnapshots": 1.0,
+        "StateReceiveBufferDelayAdded": 0,
+        "StateReceiveBufferDelayAddedUnit": 0,
+        "InputReceiveBufferSettings": 0,
+        "MaxLateInputs": 5.0,
+        "RedundantInputs": 1.0,
+        "InputReceiveBufferDelayAdded": 0,
+        "InputReceiveBufferDelayAddedUnit": 0,
+        "InputDelaySettings": 0,
+        "MinimumInputDelay": 0,
+        "MinimumInputDelayUnit": 0,
+        "ClientsCanAddInputDelayToLimitResims": false,
+        "ClientMaxResimsPerFrame": -1
+    },
+    "Network": {
+        "ConnectionTimeout": 15.0,
+        "ConnectionShutdownTime": 1.0,
+        "ReliableDataTransferModes": 3
+    },
+    "HostMigration": {
+        "EnableAutoUpdate": false,
+        "UpdateDelay": 10
+    },
+    "EncryptionConfig": {
+        "EnableEncryption": false
+    },
+    "NetworkConditions": {
+        "Enabled": true,
+        "DelayShape": 0,
+        "DelayMin": 0.15,
+        "DelayMax": 0.15,
+        "DelayPeriod": 0.0,
+        "DelayThreshold": 0.0,
+        "AdditionalJitter": 0.05,
+        "LossChanceShape": 0,
+        "LossChanceMin": 0.05,
+        "LossChanceMax": 0.05,
+        "LossChanceThreshold": 0.0,
+        "LossChancePeriod": 0.0,
+        "AdditionalLoss": 0.0
+    },
+    "Heap": {
+        "PageShift": 15,
+        "PageCount": 1024,
+        "GlobalsSize": 0
+    },
+    "AssembliesToWeave": [
+        "Assembly-CSharp",
+        "Assembly-CSharp-firstpass",
+        "Fusion.Addons.Physics"
+    ],
+    "UseSerializableDictionary": false,
+    "NullChecksForNetworkedProperties": true,
+    "CheckRpcAttributeUsage": false,
+    "CheckNetworkedPropertiesBeingEmpty": false
+}

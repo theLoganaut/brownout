@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2af4d17ae4e2beb489d2448ff1a2b945
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/FusionAddons/KCC/release_history.txt
+  uploadId: 970776

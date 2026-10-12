@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841409f6472a3164db2c84597fe118c1, type: 3}
+  m_Name: BotSettings
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.BotSettings
+  Medium:
+    Reaction: 0.5
+    AimErrorStart: 1.5
+    AimErrorSettled: 0.6
+    SettleTime: 1.5
+    TurnSpeed: 360
+    RecoilControl: 0.6
+    Tracking: 0.6
+  Hard:
+    Reaction: 0.3
+    AimErrorStart: 0.8
+    AimErrorSettled: 0.3
+    SettleTime: 1
+    TurnSpeed: 540
+    RecoilControl: 0.85
+    Tracking: 0.85
+  SkillMin: 0
+  SkillMax: 1
+  SightRange: 150
+  SightCone: 120
+  CloseAwareness: 6
+  HearingRange: 100
+  CamouflageRange: 10
+  MemoryTime: 6
+  ThinkRate: 5
+  AdsDistance: 25
+  BurstClose: {x: 8, y: 14}
+  BurstMid: {x: 4, y: 7}
+  BurstFar: {x: 2, y: 4}
+  BurstPause: {x: 0.2, y: 0.45}
+  ShotPacing: {x: 0.05, y: 0.15, z: 0.35}
+  FireAngle: 1
+  StrafeTime: {x: 0.6, y: 1.4}
+  BackOffDistance: 6
+  ReloadBelow: 0.4
+  PunchDistance: 2.2
+  CoverRadius: 15
+  CoverCandidates: 16
+  CoverWait: {x: 1.5, y: 3}
+  CoverCooldown: 4
+  CoverTimeout: 6
+  HealBelow: 110
+  BadlyHurt: 60
+  LootRadius: 45
+  WantHeals: 3
+  WantAmmoBelow: 0.7
+  LootGiveUp: 15
+  FollowDistance: {x: 5, y: 14}
+  WalkTurnSpeed: 300
+  CornerReach: 0.7
+  RepathTime: 4
+  StuckTime: 1.5
+  StuckDistance: 0.6
+  SprintDistance: 12
+  AreaStay: {x: 45, y: 90}
+  MaxDuosPerArea: 2
+  DuoSpacing: 25
+  ThinDistance: 120
+  ThinEveryTicks: 4
+  BodyTime: 8
+  SuitColor: {r: 0.36, g: 0.32, b: 0.2, a: 1}
+  AccentColor: {r: 0.7, g: 0.08, b: 0.06, a: 1}
+  Names:
+  - Alder
+  - Badger
+  - Cinder
+  - Dusk
+  - Ember
+  - Flint
+  - Gale
+  - Hollow
+  - Ivy
+  - Juniper
+  - Kestrel
+  - Lark
+  - Moss
+  - Nettle
+  - Onyx
+  - Pike
+  - Quill
+  - Rook
+  - Slate
+  - Thistle
+  - Umber
+  - Vale
+  - Wren
+  - Yarrow

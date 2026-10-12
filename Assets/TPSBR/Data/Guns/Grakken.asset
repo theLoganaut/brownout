@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Grakken
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Grakken
+  BasedOn: GKS
+  Class: 1
+  FireMode: 0
+  BurstCount: 1
+  Magazine: 38
+  Damage: 25
+  HeadMultiplier: 1.1
+  FireInterval: 0.092
+  BurstCycle: 0
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 2.42
+  AmmoInTime: 1.32
+  AmmoInEstimated: 0
+  AdsTime: 0.2
+  AdsZoom: 1.26
+  Caliber: 1
+  BulletSpeed: 400
+  SwapWeight: 0
+  HolsterTime: 0.2
+  DrawTime: 0.3
+  AdsRecoilSteps:
+  - {x: -0.024, y: 0.211}
+  - {x: -0.001, y: 0.236}
+  - {x: -0.035, y: 0.126}
+  - {x: -0.124, y: 0.316}
+  - {x: 0.004, y: 0.236}
+  - {x: -0.217, y: 0.574}
+  - {x: -0.186, y: 0.331}
+  - {x: -0.205, y: 0.466}
+  - {x: -0.385, y: 0.708}
+  - {x: -0.148, y: 0.559}
+  - {x: -0.048, y: 0.689}
+  - {x: -0.196, y: 0.789}
+  AdsUpMean: 0.525
+  AdsUpMax: 0.962
+  AdsSideMean: -0.117
+  AdsSideRange: 0.689
+  AdsSettleTime: 0.033
+  HipClimbPerShot: 0.108
+  HipSideRange: 1.419
+  KickBack: 0.035
+  KickPitch: 0.8
+  PunchPitch: 0.25
+  PunchRoll: 0.2
+  KickRecovery: 16
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  AttachmentsAllowed:
+  - Suppressor
+  - Long Barrel
+  - Foregrip
+  - Extended Mag
+  - Grip
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments: []
+  Model: {fileID: 919132149155446097, guid: b699202b4be72f54c85637862ac3819d, type: 3}

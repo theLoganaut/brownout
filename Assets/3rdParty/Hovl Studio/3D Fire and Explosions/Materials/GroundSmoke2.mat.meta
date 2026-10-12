@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 68533715331dc1a458d1a2a2a7aa3655
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/Hovl Studio/3D Fire and Explosions/Materials/GroundSmoke2.mat
+  uploadId: 970776

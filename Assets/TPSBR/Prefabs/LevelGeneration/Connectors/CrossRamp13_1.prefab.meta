@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 17f59a861e2f6fb42891261f6d37c9dd
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/LevelGeneration/Connectors/CrossRamp13_1.prefab
+  uploadId: 970776

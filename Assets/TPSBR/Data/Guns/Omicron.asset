@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Omicron
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Omicron
+  BasedOn: Outlaw
+  Class: 3
+  FireMode: 3
+  BurstCount: 1
+  Magazine: 9
+  Damage: 80
+  HeadMultiplier: 1.5
+  FireInterval: 0.68
+  BurstCycle: 0
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 4.17
+  AmmoInTime: 1.77
+  AmmoInEstimated: 0
+  AdsTime: 0.4
+  AdsZoom: 0
+  Caliber: 4
+  BulletSpeed: 900
+  SwapWeight: 3
+  HolsterTime: 0.85
+  DrawTime: 0.55
+  AdsRecoilSteps: []
+  AdsUpMean: 0
+  AdsUpMax: 0
+  AdsSideMean: 0
+  AdsSideRange: 0
+  AdsSettleTime: 0
+  HipClimbPerShot: 0
+  HipSideRange: 0
+  KickBack: 0.09
+  KickPitch: 2.5
+  PunchPitch: 1.3
+  PunchRoll: 0.6
+  KickRecovery: 8
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  - 4x
+  AttachmentsAllowed:
+  - Extended Mag
+  - Stock
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments:
+  - {fileID: 11400000, guid: 11777b8d02b5b6340b0908ca63fd29bc, type: 2}
+  Model: {fileID: 919132149155446097, guid: 379b645099aae834fab2146b6e1d02e9, type: 3}

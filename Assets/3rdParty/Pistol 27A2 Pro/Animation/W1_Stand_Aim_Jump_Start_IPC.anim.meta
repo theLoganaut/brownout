@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 02fbd517cd2c7d3439cbe6a30236a206
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/Pistol 27A2 Pro/Animation/W1_Stand_Aim_Jump_Start_IPC.anim
+  uploadId: 970776

@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: AlibiDMR
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Alibi DMR
+  BasedOn: Auger DMR
+  Class: 2
+  FireMode: 1
+  BurstCount: 1
+  Magazine: 20
+  Damage: 56
+  HeadMultiplier: 1.1
+  FireInterval: 0.19
+  BurstCycle: 0
+  FireIntervalIsLowerBound: 1
+  ReloadTime: 2.8
+  AmmoInTime: 1.72
+  AmmoInEstimated: 0
+  AdsTime: 0.27
+  AdsZoom: 0
+  Caliber: 3
+  BulletSpeed: 600
+  SwapWeight: 2
+  HolsterTime: 0.3
+  DrawTime: 0.4
+  AdsRecoilSteps:
+  - {x: -0.001, y: -0.015}
+  - {x: -0.394, y: -0.014}
+  - {x: 0.005, y: 0.003}
+  - {x: -0.198, y: 0.104}
+  - {x: 0.066, y: -0.022}
+  - {x: 0.022, y: -0.011}
+  - {x: 0.008, y: -0.002}
+  - {x: -0.039, y: 0.02}
+  - {x: -0.027, y: 0.044}
+  AdsUpMean: 0.012
+  AdsUpMax: 0.104
+  AdsSideMean: -0.062
+  AdsSideRange: 0.46
+  AdsSettleTime: 0.017
+  HipClimbPerShot: 0
+  HipSideRange: 0
+  KickBack: 0.055
+  KickPitch: 1.2
+  PunchPitch: 0.55
+  PunchRoll: 0.3
+  KickRecovery: 12
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  - 4x
+  AttachmentsAllowed:
+  - Suppressor
+  - Long Barrel
+  - Laser Sight
+  - Extended Mag
+  - Fast Mag
+  - Grip
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments:
+  - {fileID: 11400000, guid: 5dfcea6244c6e294489b088e7500545b, type: 2}
+  Model: {fileID: 919132149155446097, guid: 3fbc20924003ba449b49697ccaaccbf1, type: 3}

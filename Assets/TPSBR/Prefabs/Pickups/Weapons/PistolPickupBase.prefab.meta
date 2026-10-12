@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3a8bda49c86a2ba479189c50e7fb0b37
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/Pickups/Weapons/PistolPickupBase.prefab
+  uploadId: 970776

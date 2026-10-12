@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 934076a719ad4469ad93feb28ad0cbe0
+timeCreated: 1628776776
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Scripts/Gameplay/Weapons/MeleeWeapon.cs
+  uploadId: 970776

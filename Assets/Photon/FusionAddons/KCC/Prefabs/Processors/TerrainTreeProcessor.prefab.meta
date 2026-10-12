@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5ec6749a6dd372142b2b0fd04e911033
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/FusionAddons/KCC/Prefabs/Processors/TerrainTreeProcessor.prefab
+  uploadId: 970776

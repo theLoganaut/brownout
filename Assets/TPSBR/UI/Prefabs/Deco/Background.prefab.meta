@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fb589634425be6c4f9d9aa930b01231b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/UI/Prefabs/Deco/Background.prefab
+  uploadId: 970776

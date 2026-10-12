@@ -1,0 +1,40 @@
+namespace TPSBR
+{
+	using Fusion.Addons.KCC;
+	using Fusion.Addons.AnimationController;
+
+	public sealed class ReloadState : MultiClipState
+	{
+		// PRIVATE MEMBERS
+
+		private KCC     _kcc;
+		private Weapons _weapons;
+
+		// MultiClipState INTERFACE
+
+		protected override int GetClipID()
+		{
+			// The clip set follows the gun's own type (pistol or rifle), not the slot it's carried in
+			int currentWeaponSlot = _weapons.CurrentWeapon != null ? _weapons.CurrentWeapon.WeaponSlot : _weapons.CurrentWeaponSlot;
+			if (currentWeaponSlot > 2)
+			{
+				currentWeaponSlot = 1; // For grenades we use pistol set
+			}
+
+			if (currentWeaponSlot < 0)
+				return 0;
+
+			return currentWeaponSlot;
+		}
+
+		// AnimationState INTERFACE
+
+		protected override void OnInitialize()
+		{
+			base.OnInitialize();
+
+			_kcc     = Controller.GetComponentNoAlloc<KCC>();
+			_weapons = Controller.GetComponentNoAlloc<Weapons>();
+		}
+	}
+}

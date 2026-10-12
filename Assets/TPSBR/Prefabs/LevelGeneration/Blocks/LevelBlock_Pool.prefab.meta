@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1d3359078a4fd0c4dbaacc91597a5e18
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/LevelGeneration/Blocks/LevelBlock_Pool.prefab
+  uploadId: 970776

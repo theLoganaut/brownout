@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9c550c9d4a263a7448218a4e98111a5d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Resources/Announcements/RemainingKills_2.asset
+  uploadId: 970776

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a724d5becaece924686f92fc02945820, type: 3}
+  m_Name: Pacifier
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.GunData
+  GunName: Pacifier
+  BasedOn: Peacekeeper
+  Class: 0
+  FireMode: 0
+  BurstCount: 1
+  Magazine: 32
+  Damage: 31
+  HeadMultiplier: 1.1
+  FireInterval: 0.086
+  BurstCycle: 0
+  FireIntervalIsLowerBound: 0
+  ReloadTime: 2.68
+  AmmoInTime: 1.47
+  AmmoInEstimated: 1
+  AdsTime: 0.2
+  AdsZoom: 0
+  Caliber: 2
+  BulletSpeed: 600
+  SwapWeight: 1
+  HolsterTime: 0.25
+  DrawTime: 0.35
+  AdsRecoilSteps:
+  - {x: -0.034, y: 0.097}
+  - {x: -0.054, y: 0.202}
+  - {x: -0.123, y: 0.52}
+  - {x: -0.137, y: 0.755}
+  - {x: 0.161, y: 0.615}
+  - {x: 0.205, y: 0.387}
+  - {x: 0.092, y: 0.312}
+  - {x: 0.058, y: 0.214}
+  - {x: -0.173, y: 0.103}
+  - {x: -0.081, y: 0.293}
+  - {x: -0.142, y: 0.48}
+  - {x: -0.19, y: 0.746}
+  AdsUpMean: 0.388
+  AdsUpMax: 0.755
+  AdsSideMean: 0.007
+  AdsSideRange: 0.395
+  AdsSettleTime: 0.083
+  HipClimbPerShot: 0.06
+  HipSideRange: 1.328
+  KickBack: 0.045
+  KickPitch: 1
+  PunchPitch: 0.35
+  PunchRoll: 0.25
+  KickRecovery: 14
+  OpticsAllowed:
+  - Reflex
+  - Holo
+  - 2x
+  - 4x
+  AttachmentsAllowed:
+  - Suppressor
+  - Long Barrel
+  - Foregrip
+  - Extended Mag
+  - Stock
+  - Grip
+  BuiltInScopeZoom: 0
+  BuiltInScopeMagnified: 0
+  BuiltInScopeEyeDistance: 0
+  BuiltInAttachments: []
+  Model: {fileID: 919132149155446097, guid: d1f8d6bca9480904881b1a0be280be00, type: 3}

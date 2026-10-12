@@ -1,0 +1,44 @@
+weapon,cls,fire_mode,mag,mag_source,damage_max,damage_source,rpm_measured,rpm_kind,rpm_community,burst_cycle_ms,reload_anim_s,reload_anim_s_2,reload_community_s,ads_in_s,ads_community_s,ads_zoom,ads_recoil_up_mean_deg,ads_recoil_up_max_deg,ads_recoil_side_range_deg,hip_climb_deg_per_shot,notes
+Strife,Pistol,semi,12,Blackout (NamuWiki),46,BO4 MP launch (GameGuideHQ),300,observed cadence,491,,2.083,3.167,1.08,,0.1,,,,,,
+RK 7 Garrison,Pistol,burst3,15,BO4 MP (GameGuideHQ),32,BO4 MP launch (GameGuideHQ),1200,in-burst,830,360,2.267,3.1,1.08,,0.13,,,,,,
+Mozu,Pistol,semi (revolver),6,BO4 MP (GameGuideHQ),62,BO4 MP launch (GameGuideHQ),128,observed cadence,470,,2.417,,1.25,0.133,0.1,1.123,,,,,likely per-round or partial reload in video; treat as rough
+KAP 45,Pistol,auto,20,Blackout (NamuWiki),,,793,auto,,,1.933,1.55,,,,1.123,1.114,1.944,1.91,0.114,
+MOG 12,Shotgun,pump,4,Blackout (NamuWiki),,,60,observed cadence,80,,2.967,,0.75,0.15,0.27,1.108,,,,,likely per-round or partial reload in video; treat as rough
+SG12,Shotgun,semi,6,Blackout (NamuWiki),,,146,observed cadence,245,,2.15,1.95,1.78,,0.23,1.11,,,,,likely per-round or partial reload in video; treat as rough
+Rampage,Shotgun,semi (uncertain),8,Blackout (NamuWiki),,,,,,,3.233,3.083,,0.183,,1.109,,,,,likely per-round or partial reload in video; treat as rough
+Argus,Shotgun,pump/lever (uncertain),,,,,62,observed cadence,,,3.483,2.55,,0.15,,1.104,,,,,likely per-round or partial reload in video; treat as rough
+MX9,SMG,auto,35,Blackout (NamuWiki),28,BO4 MP launch (GameGuideHQ),722,auto,741,,2.533,1.967,1.37,0.133,0.27,1.264,1.219,1.996,1.963,0.101,
+GKS,SMG,auto,38,Blackout (NamuWiki),28,BO4 MP launch (GameGuideHQ),651,auto,661,,2.417,1.8,1.32,0.133,0.2,1.26,0.525,0.962,0.689,0.108,
+Spitfire,SMG,auto,34,Blackout (NamuWiki),27,BO4 MP launch (GameGuideHQ),1036,auto,1051,,2.333,1.917,1.55,0.15,0.25,1.262,1.662,3.116,2.168,0.035,
+Cordite,SMG,auto,60,Blackout (NamuWiki),28,BO4 MP launch (GameGuideHQ),801,auto,812,,2.733,2.283,1.97,0.15,0.25,,1.649,3.419,2.501,0.138,
+Saug 9mm,SMG,auto,36,Blackout (NamuWiki),28,BO4 MP launch (GameGuideHQ),909,auto,926,,2.333,1.733,1.32,0.133,0.22,,1.444,2.846,2.752,0.191,
+Daemon 3XB,SMG,burst3,36,Blackout (NamuWiki),,,833,in-burst,,310,2.533,2.05,,0.15,,1.261,0.239,0.783,0.778,,
+Switchblade X9,SMG,auto,30,Blackout (NamuWiki),,,845,auto,,,2.133,1.767,,0.117,,1.262,0.79,1.928,2.293,0.117,
+VMP,SMG,auto,40,video count,,,919,auto,,,2.367,1.9,,0.167,,,0.72,1.316,2.018,0.113,
+MicroMG 9mm,SMG,auto (two-stage rate),,,,,,,,,2.9,2.95,,0.183,,1.253,1.33,2.221,3.971,,"~47 ms (~1270 rpm) for the first ~17 rounds, then ~91 ms (~660 rpm)"
+KN-57,AR,auto,35,Blackout (NamuWiki),40,BO4 MP launch (GameGuideHQ),556,auto,570,,2.917,2.333,1.58,0.2,0.27,,0.706,1.368,0.97,0.118,
+Grav,AR,auto,35,Blackout (NamuWiki),,,556,auto,,,2.817,2.3,,0.233,,,0.874,1.461,0.838,0.149,
+AN-94,AR,auto (fast first rounds),,,,,,,,,2.883,2.367,,0.083,,1.433,0.67,1.325,1.714,,"first ~2 rounds at ~50-70 ms, then ~108 ms"
+Peacekeeper,AR,auto,32,Blackout (NamuWiki),,,697,auto,,,2.683,1.967,,0.133,,,0.388,0.755,0.395,0.06,
+ICR-7,AR,auto,35,Blackout (NamuWiki),37,BO4 MP launch (GameGuideHQ),601,auto,615,,2.633,2.067,1.18,0.2,0.27,1.427,0.707,1.369,0.65,0.129,
+Rampart 17,AR,auto,30,Blackout (NamuWiki),46,BO4 MP launch (GameGuideHQ),517,auto,529,,3.233,2.633,1.72,0.217,0.27,1.514,1.05,1.674,1.148,0.076,
+VAPR-XKG,AR,auto,35,Blackout (NamuWiki),37,BO4 MP launch (GameGuideHQ),653,auto,667,,2.733,2.267,1.47,0.167,0.27,1.428,0.334,1.756,1.888,0.328,
+Maddox RFB,AR,auto,40,Blackout (NamuWiki),32,BO4 MP launch (GameGuideHQ),723,auto,676,,2.767,2.267,1.77,0.217,0.27,,0.983,1.91,1.234,0.366,
+SWAT RFT,AR,auto,35,Blackout (NamuWiki),,,624,auto,,,2.917,2.417,,0.233,,,0.558,1.115,0.944,0.182,
+Doublecross,AR,auto (irregular cadence),,,,,,,,,,,,,,,0.501,1.158,1.45,,intervals vary 75-125 ms; median ~96 ms
+Auger DMR,Tactical,semi,20,Blackout (NamuWiki),62,BO4 MP launch (GameGuideHQ),316,observed cadence,327,,2.8,,1.72,0.167,0.27,,0.012,0.104,0.46,,
+ABR 223,Tactical,burst3,36,Blackout (NamuWiki),38,BO4 MP launch (GameGuideHQ),732,in-burst,1197,600,2.95,2.567,1.67,,0.27,,0.145,0.638,3.452,,
+Swordfish,Tactical,burst4,36,Blackout (NamuWiki),34,BO4 MP launch (GameGuideHQ),857,in-burst,1124,390,3.183,2.417,1.92,0.183,0.27,,0.08,0.223,0.397,,
+S6 Stingray,Tactical,burst2,26,Blackout (NamuWiki),,,221,observed cadence,,,2.95,2.267,,0.117,,,0.289,0.616,0.23,,
+M16,Tactical,burst3,,,,,1463,in-burst,,400,2.9,2.25,,0.183,,1.427,0.39,0.839,0.875,,
+Paladin HB50,Sniper,bolt,5,BO4 MP (GameGuideHQ),,,61,observed cadence,52,,4.3,4.067,2.07,0.133,0.4,,,,,,likely per-round or partial reload in video; treat as rough
+Outlaw,Sniper,bolt,9,Blackout (NamuWiki),,,88,observed cadence,89,,4.167,3.883,1.77,0.133,0.4,,,,,,likely per-round or partial reload in video; treat as rough
+SDM,Sniper,semi,12,Blackout (NamuWiki),,,240,observed cadence,283,,3.867,,2.1,,0.42,,,,,,
+Koshka,Sniper,bolt,8,BO4 MP (GameGuideHQ),,,49,observed cadence,54,,4.0,2.583,2.02,0.117,0.35,,,,,,likely per-round or partial reload in video; treat as rough
+Vendetta,Sniper,semi,20,Blackout (NamuWiki),,,353,observed cadence,,,3.167,2.95,,0.133,,,,,,,
+Locus,Sniper,bolt,,,,,49,observed cadence,,,3.783,3.033,,0.167,,,,,,,likely per-round or partial reload in video; treat as rough
+Havelina AA50,Sniper,semi,,,,,171,observed cadence,,,6.567,4.267,,0.117,,,,,,,
+Titan,LMG,auto,75,Blackout (NamuWiki),46,BO4 MP launch (GameGuideHQ),480,auto,485,,6.05,6.083,4.55,0.217,0.33,,0.41,0.847,0.463,-0.014,
+Hades,LMG,auto,65,Blackout (NamuWiki),36,BO4 MP launch (GameGuideHQ),651,auto,657,,4.917,4.933,3.07,0.15,0.32,,0.911,1.618,1.35,0.099,
+VKM 750,LMG,auto,50,Blackout (NamuWiki),62,BO4 MP launch (GameGuideHQ),360,auto,368,,7.15,,5.22,,0.32,,,,,0.004,
+Tigershark,LMG,auto,48,Blackout (NamuWiki),,,500,auto,,,3.733,2.883,,0.233,,,0.197,0.645,4.76,0.016,

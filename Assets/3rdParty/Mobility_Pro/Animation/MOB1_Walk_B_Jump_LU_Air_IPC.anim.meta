@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 84ddee80cdd386243a7a2f658d2da785
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/Mobility_Pro/Animation/MOB1_Walk_B_Jump_LU_Air_IPC.anim
+  uploadId: 970776

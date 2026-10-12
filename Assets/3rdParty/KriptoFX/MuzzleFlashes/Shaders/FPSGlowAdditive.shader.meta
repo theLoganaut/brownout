@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b91de4d65a1167d4abcd2aaf72067ccd
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/KriptoFX/MuzzleFlashes/Shaders/FPSGlowAdditive.shader
+  uploadId: 970776

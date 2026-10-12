@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e4dc9cb883a3cab47a3a7f8fafe0cb18
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Resources/Settings/MapSettings.asset
+  uploadId: 970776

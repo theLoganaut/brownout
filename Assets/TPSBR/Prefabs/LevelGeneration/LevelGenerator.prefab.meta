@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 29b155d4997d9ee4f93f3e85056ad0e7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/LevelGeneration/LevelGenerator.prefab
+  uploadId: 970776

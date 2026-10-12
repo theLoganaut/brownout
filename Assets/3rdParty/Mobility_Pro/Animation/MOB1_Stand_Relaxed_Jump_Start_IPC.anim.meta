@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2ea31b076e468a94bad1d43cf884303b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/3rdParty/Mobility_Pro/Animation/MOB1_Stand_Relaxed_Jump_Start_IPC.anim
+  uploadId: 970776

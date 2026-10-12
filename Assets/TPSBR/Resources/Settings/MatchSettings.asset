@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c22b94d695ded4a8fd9b09d3fd5001, type: 3}
+  m_Name: MatchSettings
+  m_EditorClassIdentifier: Assembly-CSharp::TPSBR.MatchSettings
+  WarmupRespawnTime: 3
+  WarmupCountdown: 30
+  SessionMaxPlayers: 24
+  MenuMapID: Map.Brownout
+  HelicopterHeight: 250
+  HelicopterSpeed: 40
+  PathCenterShare: 0.25
+  PathOutside: 120
+  ForcedJumpInterval: 0.5
+  GlideSpeed: 12
+  GlideSink: 13
+  DiveSpeed: 10
+  DiveSink: 45
+  DivePitch: 70
+  FastShare: 0.2
+  SlowShare: 0.4
+  BankSpeed: 6
+  DropAcceleration: 15
+  JumpOutSpeed: 5
+  WingsOffHeight: 6
+  LandRollTime: 0.93
+  RollFirstPersonShare: 0.5
+  LandRollSpeed: 5
+  ZoneStartRadius: 500
+  ZoneShrink: 0.5
+  ZoneSteps:
+  - Phase: 0
+    Duration: 300
+    Damage: 0
+  - Phase: 1
+    Duration: 120
+    Damage: 10
+  - Phase: 0
+    Duration: 120
+    Damage: 10
+  - Phase: 1
+    Duration: 60
+    Damage: 30
+  - Phase: 0
+    Duration: 60
+    Damage: 30
+  - Phase: 1
+    Duration: 60
+    Damage: 75
+  - Phase: 0
+    Duration: 60
+    Damage: 75
+  - Phase: 1
+    Duration: 300
+    Damage: 75
+  EdgeCountdown: 10
+  EdgeDamage: 20
+  BotDuos: 11
+  LoneBotTeammate: 1
+  DummyDuos: 0
+  DummySpacing: 100
+  EndCountdown: 10

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 94641048c850a7a4090359f7c0e96016
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/TPSBR/Prefabs/Gameplay/DamageArea.prefab
+  uploadId: 970776

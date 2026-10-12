@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c8cc69f25cc39f6468f8dfc1bc233720
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226753
+  packageName: BR200 - Battle Royale Multiplayer - Photon Fusion
+  packageVersion: 2.1.0
+  assetPath: Assets/Photon/FusionAddons/KCC/Prefabs/Debug/CallbackLogger.prefab
+  uploadId: 970776
